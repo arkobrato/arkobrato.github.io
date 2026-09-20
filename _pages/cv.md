@@ -64,21 +64,23 @@ Skills
 
 Selected Publications
 ======
-1. Song M-A, Gupta A, et al. "Differential blood DNA methylation loci between Native Hawaiian and White women..." *Scientific Reports (Nature Portfolio)*, 2025. [DOI](https://doi.org/10.1038/s41598-025-25253-4)
-2. Deng Q, Gupta A, et al. "graph-GPA 2.0: improving multi-disease genetic analysis..." *Frontiers in Genetics*, 2023. [DOI](https://doi.org/10.3389/fgene.2023.1079198)
-3. Kuhn BN, et al. (incl. Gupta A). "Distinct Behavioral Profiles and Neuronal Correlates of Heroin Vulnerability Versus Resiliency in a Multi-Symptomatic Model of Heroin Use Disorder in Rats." *American Journal of Psychiatry*, 2025. [DOI](https://doi.org/10.1176/appi.ajp.20230623)
-4. Hayburn R, Chung D, Gupta A, et al. "The Immune Landscape of Canine Soft Tissue Sarcomas as a Model for Human Soft Tissue Sarcomas." *Cancers*, 2025. [DOI](https://doi.org/10.3390/cancers17233860)
-5. Jeon H, et al. (incl. Gupta A). "Statistical Power Analysis for Designing Bulk, Single-Cell, and Spatial Transcriptomics Experiments: Review, Tutorial, and Perspectives." *Biomolecules*, 2023. [DOI](https://doi.org/10.3390/biom13020221)
+  <ul>{% for post in site.publications reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
 
 (+ 3 additional peer-reviewed publications)
 
-Presentations & Posters
+Talks & Posters
 ======
-* Joint Statistical Meeting (JSM) 2026: Presenting part of dissertation on SRT
-* ENAR 2026: Presented part of dissertation on SRT
-* Midwest Biopharmaceutical Statistics Workshop (MBSW) 2026: Poster presented on SRT
-* ICSA Midwest Chapter & NIC-ASA Joint Fall Meeting 2023: Poster presented on graph-GPA 2.0
-* Annual Joint Biostatistics Symposium, 2023 & 2026: Poster presented on SRT and graph-GPA 2.0
+  <ul>{% for post in site.talks reversed %}
+    {% include archive-single-talk-cv.html %}
+  {% endfor %}</ul>
+
+Teaching
+======
+  <ul>{% for post in site.teaching reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
 
 Honors, Awards & Leadership
 ======
@@ -90,8 +92,3 @@ Honors, Awards & Leadership
   * Led a 100+ member organization; liaised between graduate students and department administration
 * ICSA Student Travel Grant, Oct 2023
 * INSPIRE SHE Scholarship, Dept. of Science & Technology, Govt. of India (top 1 percentile, 5-year award), 2014 - 2019
-
-Service and leadership
-======
-* Student Representative, Columbus Chapter, American Statistical Association (ASA)
-* President, Statistics & Biostatistics Graduate Student Association, OSU
