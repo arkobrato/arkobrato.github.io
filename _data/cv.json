@@ -1,152 +1,264 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Arkobrato Gupta",
+    "email": "arko.work25@gmail.com",
+    "phone": "+1-616-227-8780",
+    "website": "https://arkobrato.github.io",
+    "summary": "PhD candidate in Biostatistics at The Ohio State University (exp. May 2027) with industry experience at Novartis and Abbott, spanning clinical-trial design and analysis, statistical analysis plans, regulatory submissions, and real-world evidence. Skilled in Bayesian methods, causal inference, biomarker/genetic analysis, and machine learning; proficient in R and SAS. 8 peer-reviewed papers, including Scientific Reports (Nature Portfolio).",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
+      "city": "Columbus",
       "countryCode": "US",
-      "region": ""
+      "region": "OH"
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "network": "LinkedIn",
+        "username": "arkobrato-gupta",
+        "url": "https://linkedin.com/in/arkobrato-gupta"
       },
       {
         "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "username": "0000-0001-5026-3085",
+        "url": "https://orcid.org/0000-0001-5026-3085"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "arkobrato",
+        "url": "https://github.com/arkobrato"
+      },
+      {
+        "network": "Google Scholar",
+        "username": "",
+        "url": "https://scholar.google.com/citations?user=v6yAx7cAAAAJ&hl=en"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "Abbott Nutrition",
+      "position": "Biostatistics Intern",
+      "website": "",
+      "startDate": "2025-06-01",
+      "endDate": "2026-08-31",
+      "summary": "Columbus, OH",
+      "highlights": [
+        "Analyzed a propensity-matched NHANES cohort (n = 6,508; 2011-2018): adults consuming ≥1.2 g/kg/day protein had 1.2% greater lean soft tissue (p < 0.001), independent of physical activity, supporting protein guidelines for healthy aging",
+        "Owned the full analysis lifecycle: cohort definition, statistical method selection, confounder adjustment, and inference; communicated results to scientific stakeholders and presented to leadership",
+        "Accepted for poster presentation at ICFSR 2026 (Washington, DC)",
+        "Completed and presented an individual participant data (IPD) meta-analysis across 14 clinical trials evaluating intervention effects on key health outcomes"
+      ]
+    },
+    {
+      "company": "The Ohio State University, Comprehensive Cancer Center",
+      "position": "Graduate Research Associate",
+      "website": "",
+      "startDate": "2022-05-01",
+      "endDate": "",
+      "summary": "Columbus, OH • Pelotonia Institute for Immuno-Oncology",
+      "highlights": [
+        "Developed SRT, a statistical framework integrating spatial TCR-seq and transcriptomics (earth-mover's distance + Gaussian-mixture FDR) that identified 878 genes coupled with T-cell diversity in glioblastoma, a biomarker-discovery method for the tumor microenvironment",
+        "Developed a Bayesian stochastic block model framework to identify behavioral subgroups in a 900+ subject opioid use disorder study; linked subgroups to brain-region gene expression, with ongoing extension to multivariate phenotype-expression association",
+        "Built SCOPE, an R Shiny app implementing the Bayesian stochastic block model clustering framework (modularity-initialized Gibbs sampling with posterior uncertainty quantification), adopted by 5+ labs across the USA and international partners (Italy, UK)",
+        "Engineered a deep learning + feature selection pipeline on 60,000-feature TCGA-BRCA RNA-seq data to identify breast cancer biomarkers across multiple populations",
+        "Co-led a genome-wide EWAS (Illumina EPIC; 802,978 CpGs; n = 324 postmenopausal women) identifying 736 differentially methylated loci between Native Hawaiian and White women; linked to liver disease pathways (61% of genes), DASH diet adherence, and adiponectin; published co-first author in Scientific Reports, 2025"
+      ]
+    },
+    {
+      "company": "Novartis Healthcare Pvt. Ltd.",
+      "position": "Statistical Programmer",
+      "website": "",
+      "startDate": "2019-08-01",
+      "endDate": "2021-07-31",
+      "summary": "Hyderabad, India",
+      "highlights": [
+        "Selected and implemented statistical methods under study analysis plans (SAPs), delivering CDISC-compliant SAS/R programming (SDTM, ADaM, TFL) across three clinical trials, including the pivotal Phase III study for Kisqali (ribociclib)",
+        "Built reporting databases supporting regulatory submissions across solid-tumor oncology and respiratory therapeutic areas"
+      ]
+    },
+    {
+      "company": "The Ohio State University, Division of Biostatistics",
+      "position": "Graduate Teaching Associate",
+      "website": "",
+      "startDate": "2021-08-01",
+      "endDate": "2022-05-31",
+      "summary": "College of Public Health",
+      "highlights": [
+        "Led R and SAS lab sections and a causal inference course for graduate and undergraduate students"
+      ]
+    },
+    {
+      "company": "Indian Institute of Management (IIM) Ahmedabad",
+      "position": "Research Intern",
+      "website": "",
+      "startDate": "2018-08-01",
+      "endDate": "2018-09-30",
+      "summary": "Ahmedabad, India",
+      "highlights": [
+        "Collaborated with a multidisciplinary team to quantify public support for nuclear energy using survey data and regression analysis"
+      ]
+    },
+    {
+      "company": "National Sample Survey Office (NSSO), Ministry of Statistics, Govt. of India",
+      "position": "Research Intern",
+      "website": "",
+      "startDate": "2018-06-01",
+      "endDate": "2018-07-31",
+      "summary": "Kolkata, India",
+      "highlights": [
+        "Analyzed national sample survey data using logistic regression and survey methods to identify determinants of catastrophic health expenditure in India; presented findings to the Ministry"
+      ]
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
+      "institution": "The Ohio State University",
+      "area": "PhD in Biostatistics",
+      "studyType": "PhD",
+      "startDate": "2021-08-01",
+      "endDate": "2027-05-31",
+      "gpa": null,
+      "courses": [
+        "Advanced Survival Analysis",
+        "Statistical Genetics",
+        "Causal Inference",
+        "Bayesian Inference",
+        "MCMC",
+        "Bioinformatics & ML in Omics"
+      ]
+    },
+    {
+      "institution": "The Ohio State University",
+      "area": "MS in Statistics",
+      "studyType": "MS",
+      "startDate": "2021-08-01",
+      "endDate": "2027-05-31",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
+      "institution": "Hindu College, University of Delhi",
+      "area": "MS in Statistics",
+      "studyType": "MS",
+      "startDate": "2017-07-01",
+      "endDate": "2019-06-30",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "institution": "St. Xavier's College, Calcutta University",
+      "area": "BS (Hons.) in Statistics",
+      "studyType": "BS",
+      "startDate": "2014-07-01",
+      "endDate": "2017-06-30",
       "gpa": null,
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "name": "Clinical & Regulatory",
+      "keywords": ["CDISC (SDTM, ADaM, TFL)", "Phase I-III trial programming", "survival analysis", "causal inference", "mixed models"]
+    },
+    {
+      "name": "Omics & Genomics",
+      "keywords": ["Seurat", "DESeq2", "Cell Ranger (10x Genomics)", "PLINK (GWAS)", "spatial transcriptomics", "TCR-seq", "DNA methylation"]
+    },
+    {
+      "name": "Statistics & ML",
+      "keywords": ["Bayesian inference", "MCMC", "FDR control", "deep learning", "feature selection", "Gaussian mixture models"]
+    },
+    {
+      "name": "Software",
+      "keywords": ["R (Shiny, R Markdown, Quarto)", "LaTeX", "SAS", "VS Code", "C", "C++", "Stata", "SPSS", "SQL"]
+    }
+  ],
   "languages": [],
   "interests": [],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Differential blood DNA methylation loci between Native Hawaiian and White women",
+      "publisher": "Scientific Reports (Nature Portfolio)",
+      "releaseDate": "2025-01-01",
+      "website": "https://doi.org/10.1038/s41598-025-25253-4",
+      "summary": "Song M-A, Gupta A, et al. Co-first author. Genome-wide EWAS (Illumina EPIC; 802,978 CpGs; n = 324 postmenopausal women) identifying 736 differentially methylated loci between Native Hawaiian and White women."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "graph-GPA 2.0: improving multi-disease genetic analysis",
+      "publisher": "Frontiers in Genetics",
+      "releaseDate": "2023-01-01",
+      "website": "https://doi.org/10.3389/fgene.2023.1079198",
+      "summary": "Deng Q, Gupta A, et al."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "Distinct Behavioral Profiles and Neuronal Correlates of Heroin Vulnerability Versus Resiliency in a Multi-Symptomatic Model of Heroin Use Disorder in Rats",
+      "publisher": "American Journal of Psychiatry",
+      "releaseDate": "2025-01-01",
+      "website": "https://doi.org/10.1176/appi.ajp.20230623",
+      "summary": "Kuhn BN, et al. (incl. Gupta A)."
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "The Immune Landscape of Canine Soft Tissue Sarcomas as a Model for Human Soft Tissue Sarcomas",
+      "publisher": "Cancers",
+      "releaseDate": "2025-01-01",
+      "website": "https://doi.org/10.3390/cancers17233860",
+      "summary": "Hayburn R, Chung D, Gupta A, et al."
+    },
+    {
+      "name": "Statistical Power Analysis for Designing Bulk, Single-Cell, and Spatial Transcriptomics Experiments: Review, Tutorial, and Perspectives",
+      "publisher": "Biomolecules",
+      "releaseDate": "2023-01-01",
+      "website": "https://doi.org/10.3390/biom13020221",
+      "summary": "Jeon H, et al. (incl. Gupta A). Plus 3 additional peer-reviewed publications."
     }
   ],
   "presentations": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
+      "name": "Dissertation talk on SRT",
+      "event": "Joint Statistical Meeting (JSM)",
+      "date": "2026-08-01",
+      "location": "",
       "description": ""
     },
     {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
+      "name": "Dissertation talk on SRT",
+      "event": "ENAR",
+      "date": "2026-03-01",
+      "location": "",
       "description": ""
     },
     {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
+      "name": "Poster on SRT",
+      "event": "Midwest Biopharmaceutical Statistics Workshop (MBSW)",
+      "date": "2026-05-01",
+      "location": "",
       "description": ""
     },
     {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
+      "name": "Poster on graph-GPA 2.0",
+      "event": "ICSA Midwest Chapter & NIC-ASA Joint Fall Meeting",
+      "date": "2023-10-01",
+      "location": "",
+      "description": ""
+    },
+    {
+      "name": "Poster on SRT and graph-GPA 2.0",
+      "event": "Annual Joint Biostatistics Symposium",
+      "date": "2023-01-01",
+      "location": "",
       "description": ""
     }
   ],
   "teaching": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
+      "course": "R and SAS lab sections; causal inference course",
+      "institution": "The Ohio State University, Division of Biostatistics",
+      "date": "2021-08-01",
+      "role": "Graduate Teaching Associate",
+      "description": "Led lab sections for graduate and undergraduate students"
     }
   ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "portfolio": []
 }
