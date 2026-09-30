@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-[Download a copy of my CV (.docx)]({{ base_path }}/files/Arkobrato_Gupta_CV.docx)
+[Download my CV (PDF)]({{ base_path }}/files/cv/Arkobrato_Gupta_CV.pdf) · [.docx version]({{ base_path }}/files/Arkobrato_Gupta_CV.docx)
 
 Education
 ======

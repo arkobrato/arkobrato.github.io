@@ -1,0 +1,230 @@
+%% Curriculum Vitae of Arkobrato Gupta
+%% Built on the moderncv template (Copyright 2006-2013 Xavier Danaux, LPPL 1.3c).
+%% Compile with XeLaTeX (required by fontspec), e.g. on Overleaf: Menu > Compiler > XeLaTeX.
+
+
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{casual}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{xcolor}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\usepackage{multicol}
+\usepackage{import}
+\usepackage{pifont}
+
+% personal data
+\name{Arkobrato}{Gupta}
+% \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{The Ohio State University, Columbus, OH}{}{}
+
+\newcommand*{\customcventry}[7][.25em]{
+  \begin{tabular}{@{}l}
+    {\bfseries #4}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\bfseries #5}
+  \end{tabular} \\
+  \begin{tabular}{@{}l}
+    {\itshape #3}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #2}
+  \end{tabular}
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\newcommand*{\customcvproject}[4][.25em]{
+  \begin{tabular}{@{}l}
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #3}
+  \end{tabular}
+  \ifx&#4&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#4%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\setlength{\tabcolsep}{12pt}
+\renewcommand{\labelitemi}{$\bullet$}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+\vspace*{-10mm}
+
+\begin{center}
+\begin{tabular}{ c c c }
+ \faEnvelope[regular]\enspace gupta.1161@osu.edu
+& \faMobile\enspace +1-616-227-8780
+& \href{https://arkobrato.github.io}{\faGlobe\enspace arkobrato.github.io} \\
+ \href{https://scholar.google.com/citations?user=v6yAx7cAAAAJ&hl=en}{\faGraduationCap\enspace Google Scholar}
+& \href{https://www.linkedin.com/in/arkobrato-gupta}{\faLinkedin\enspace arkobrato-gupta}
+& \href{https://orcid.org/0000-0001-5026-3085}{ORCID: 0000-0001-5026-3085}
+\end{tabular}
+\end{center}
+
+\section{EDUCATION}
+{\customcventry{Aug 2021 - Aug 2027 (expected)}{\textbullet\, Ph.D. in Biostatistics \& M.S. in Statistics}{The Ohio State University}{Columbus, OH, USA}{}{\textbullet\, Advisor: Dr.\ Dongjun Chung\\
+\textbullet\, Dissertation:\ Statistical frameworks integrating multi-modal biological data, with applications in immuno-oncology and neurogenomics of opioid use disorder\\
+\textbullet\, Coursework:\ Advanced Survival Analysis, Statistical Genetics, Causal Inference, Bayesian Inference, MCMC, Bioinformatics \& Machine Learning in Omics}}
+{\customcventry{Jul 2017 - Jun 2019}{\textbullet\, M.S. in Statistics}{Hindu College, University of Delhi}{New Delhi, India}{}{}}
+{\customcventry{Jul 2014 - Jun 2017}{\textbullet\, B.S. (Hons.) in Statistics}{St.\ Xavier's College, University of Calcutta}{Kolkata, India}{}{\textbullet\, Thesis:\ Bayesian hierarchical modeling (MCMC:\ Gibbs, Metropolis-Hastings) in astro-statistics}}
+
+\section{RESEARCH \& PROFESSIONAL EXPERIENCE}
+{\customcventry{May 2022 - Present}{Graduate Research Associate}{The Ohio State University Comprehensive Cancer Center}{Columbus, OH, USA}{}
+{Pelotonia Institute for Immuno-Oncology
+\begin{itemize}
+  \item Developed \textbf{SRT}, a statistical framework integrating spatial TCR-seq and transcriptomics (earth-mover's distance + Gaussian-mixture FDR) that identified 878 genes coupled with T-cell diversity in glioblastoma; a biomarker-discovery method for the tumor microenvironment.
+  \item Developed a Bayesian stochastic block model framework to identify behavioral subgroups in a 900+ subject opioid use disorder study; linked subgroups to brain-region gene expression, with ongoing extension to multivariate phenotype-expression association.
+  \item Built \textbf{SCOPE}, an R Shiny app implementing the Bayesian stochastic block model clustering framework (modularity-initialized Gibbs sampling with posterior uncertainty quantification), adopted by 5+ labs across the USA and international partners (Italy, UK).
+  \item Engineered a deep learning + feature selection pipeline on 60,000-feature TCGA-BRCA RNA-seq data to identify breast cancer biomarkers across multiple populations.
+  \item Co-led a genome-wide EWAS (Illumina EPIC; 802,978 CpGs; $n = 324$ postmenopausal women) identifying 736 differentially methylated loci between Native Hawaiian and White women, linked to liver disease pathways (61\% of genes), DASH diet adherence, and adiponectin; published as co-first author in \textit{Scientific Reports} (2025).
+\end{itemize}
+}}
+\vspace{0.1cm}
+{\customcventry{Summers 2025 \& 2026}{Biostatistics Intern}{Abbott Nutrition}{Columbus, OH, USA}{}
+{\begin{itemize}
+  \item \textbf{2025:} Analyzed a propensity-matched NHANES cohort ($n = 6{,}508$; 2011--2018): adults consuming $\geq$1.2 g/kg/day protein had 1.2\% greater lean soft tissue ($p < 0.001$), independent of physical activity, supporting protein guidelines for healthy aging.
+  \item Owned the full analysis lifecycle: cohort definition, statistical method selection, confounder adjustment, and inference; communicated results to scientific stakeholders and presented to leadership. Accepted for poster presentation at ICFSR 2026 (Washington, DC).
+  \item \textbf{2026:} Completed and presented an individual participant data (IPD) meta-analysis across 14 clinical trials evaluating intervention effects on key health outcomes.
+\end{itemize}
+}}
+\vspace{0.1cm}
+{\customcventry{Aug 2019 - Jul 2021}{Statistical Programmer}{Novartis Healthcare Pvt.\ Ltd.}{Hyderabad, India}{}
+{\begin{itemize}
+  \item Selected and implemented statistical methods under statistical analysis plans (SAPs), delivering CDISC-compliant SAS/R programming (SDTM, ADaM, TFL) across three clinical trials, including the pivotal Phase III study for Kisqali (ribociclib).
+  \item Built reporting databases supporting regulatory submissions across solid-tumor oncology and respiratory therapeutic areas.
+\end{itemize}
+}}
+\vspace{0.1cm}
+{\customcventry{Aug - Sep 2018}{Research Intern}{Indian Institute of Management (IIM) Ahmedabad}{Ahmedabad, India}{}
+{\begin{itemize}
+  \item Collaborated with a multidisciplinary team to quantify public support for nuclear energy using survey data and regression analysis.
+\end{itemize}
+}}
+\vspace{0.1cm}
+{\customcventry{Jun - Jul 2018}{Research Intern}{National Sample Survey Office (NSSO), Govt.\ of India}{Kolkata, India}{}
+{\begin{itemize}
+  \item Analyzed national sample survey data using logistic regression and survey methods to identify determinants of catastrophic health expenditure in India; presented findings to the Ministry.
+\end{itemize}
+}}
+
+\section{PUBLICATIONS}
+\vskip 0.3cm
+\textbf{\textcolor{pink}{\large{$\quad$Peer-Reviewed Papers}}}
+\vskip 0.2cm
+\begin{itemize}
+\item[] $*$ Joint first authors
+\vskip 0.15cm
+\item Song, M.\ A.$^*$, \textbf{Gupta, A.$^*$}, et al.\ (2025). Differential blood DNA methylation loci between Native Hawaiian and White women. \textit{Scientific Reports}. \href{https://doi.org/10.1038/s41598-025-25253-4}{doi:10.1038/s41598-025-25253-4}
+\vspace{5pt}
+\item Kuhn, B.\ N., \ldots, \textbf{Gupta, A.}, et al.\ (2025). Distinct behavioral profiles and neuronal correlates of heroin vulnerability versus resiliency in a multi-symptomatic model of heroin use disorder in rats. \textit{American Journal of Psychiatry}. \href{https://doi.org/10.1176/appi.ajp.20230623}{doi:10.1176/appi.ajp.20230623}
+\vspace{5pt}
+\item Hayburn, R., Chung, D., \textbf{Gupta, A.}, et al.\ (2025). The immune landscape of canine soft tissue sarcomas as a model for human soft tissue sarcomas. \textit{Cancers}. \href{https://doi.org/10.3390/cancers17233860}{doi:10.3390/cancers17233860}
+\vspace{5pt}
+\item Deng, Q.$^*$, \textbf{Gupta, A.$^*$}, Jeon, H.$^*$, Nam, J.\ H., Yilmaz, A.\ S., Chang, W., \ldots\ $\&$ Chung, D.\ (2023). graph-GPA 2.0: improving multi-disease genetic analysis with integration of functional annotation data. \textit{Frontiers in Genetics}, 14. \href{https://doi.org/10.3389/fgene.2023.1079198}{doi:10.3389/fgene.2023.1079198}
+\vspace{5pt}
+\item Jeon, H., Xie, J., Jeon, Y., Jung, K.\ J., \textbf{Gupta, A.}, Chang, W., $\&$ Chung, D.\ (2023). Statistical power analysis for designing bulk, single-cell, and spatial transcriptomics experiments: review, tutorial, and perspectives. \textit{Biomolecules}, 13(2), 221. \href{https://doi.org/10.3390/biom13020221}{doi:10.3390/biom13020221}
+% TODO: add the 3 additional peer-reviewed publications here
+\end{itemize}
+\vspace{3pt}
+
+\section{PRESENTATIONS}
+\begin{itemize}
+\item \textbf{Gupta, A.} (2026). \textit{Joint Statistical Meetings (JSM)} 2026. Oral Presentation:\ SRT, a statistical framework integrating spatial TCR-seq and transcriptomics (dissertation research).
+\vskip 0.1cm
+\item \textbf{Gupta, A.} (2026). \textit{International Conference on Frailty \& Sarcopenia Research (ICFSR)} 2026, Washington, DC. Poster Presentation:\ Protein intake and lean soft tissue in a propensity-matched NHANES cohort.
+\vskip 0.1cm
+\item \textbf{Gupta, A.} (2026). \textit{Midwest Biopharmaceutical Statistics Workshop (MBSW)} 2026. Poster Presentation:\ SRT.
+\vskip 0.1cm
+\item \textbf{Gupta, A.} (2026). \textit{ENAR Spring Meeting} 2026. Oral Presentation:\ SRT (dissertation research).
+\vskip 0.1cm
+\item \textbf{Gupta, A.} (2026). \textit{Annual Joint Biostatistics Symposium} 2026, Columbus, OH. Poster Presentation:\ SRT and graph-GPA 2.0.
+\vskip 0.1cm
+\item \textbf{Gupta, A.} (2023). \textit{ICSA Midwest Chapter \& NIC-ASA Joint Fall Meeting} 2023. Poster Presentation:\ graph-GPA 2.0:\ improving multi-disease genetic analysis.
+\vskip 0.1cm
+\item \textbf{Gupta, A.} (2023). \textit{Annual Joint Biostatistics Symposium} 2023, Columbus, OH. Poster Presentation:\ SRT and graph-GPA 2.0.
+\end{itemize}
+
+\section{AWARDS $\&$ SCHOLARSHIPS}
+\begin{itemize}
+\vskip 0.1cm
+    \item Graduate Career Accelerator Fund (CAF) Award, The Ohio State University (May 2026)
+\vskip 0.1cm
+    \item MBSW Student Travel Grant (May 2026)
+\vskip 0.1cm
+    \item Koch Graduate Student Travel Award, The Ohio State University (Mar 2026)
+\vskip 0.1cm
+    \item ICSA Student Travel Grant (Oct 2023)
+\vskip 0.1cm
+    \item INSPIRE SHE Scholarship, Department of Science \& Technology, Govt.\ of India (2014 - 2019) \\
+    Five-year award for students in the top 1 percentile
+ \end{itemize}
+
+\section{LEADERSHIP $\&$ SERVICE}
+\begin{itemize}
+\vskip 0.1cm
+\item \textbf{Student Representative, Columbus Chapter, American Statistical Association (ASA)} (2026 - 2027)
+\vskip 0.1cm
+\item \textbf{President, Statistics \& Biostatistics Graduate Student Association, The Ohio State University} (Aug 2024 - Aug 2025)\\
+Led a 100+ member organization; liaised between graduate students and department administration.
+ \end{itemize}
+
+\section{TEACHING EXPERIENCE}
+{\customcventry{Aug 2021 - May 2022}{Graduate Teaching Associate}{The Ohio State University}{Columbus, OH, USA}{}
+{Division of Biostatistics, College of Public Health
+\begin{itemize}
+  \item R and SAS Lab Sections\\
+  Led lab sections for graduate and undergraduate students
+  \item Causal Inference\\
+  Led a causal inference course for graduate and undergraduate students
+\end{itemize}
+}}
+
+\section{SOFTWARE}
+\begin{itemize}
+\item \textbf{SCOPE:} R Shiny app for Bayesian stochastic block model clustering with posterior uncertainty quantification; used by 5+ labs in the USA, Italy, and the UK.
+\vskip 0.1cm
+\item \textbf{SRT:} Statistical framework for integrating spatial TCR-seq and transcriptomics data.
+\end{itemize}
+
+\section{SKILLS}
+\begin{itemize}
+   \item \textbf{Clinical \& Regulatory:} CDISC (SDTM, ADaM, TFL), Phase I-III trial programming, survival analysis, causal inference, mixed models
+   \item \textbf{Omics \& Genomics:} Seurat, DESeq2, Cell Ranger (10x Genomics), PLINK (GWAS), spatial transcriptomics, TCR-seq, DNA methylation
+   \item \textbf{Statistics \& Machine Learning:} Bayesian inference, MCMC, FDR control, deep learning, feature selection, Gaussian mixture models
+   \item \textbf{Programming \& Software:} R (Shiny, R Markdown, Quarto), SAS, LaTeX, VS Code; also C, C++, Stata, SPSS, SQL
+\end{itemize}
+
+\section{REFERENCES}
+Available upon request.
+% \textbf{\textcolor{pink}{\large{Contact information:}}}
+% \begin{enumerate}
+%     \vskip 0.35cm
+%     \item Dongjun Chung, PhD \\ Associate Professor\\ Department of Biomedical Informatics, College of Medicine\\
+% The Ohio State University\\\url{Dongjun.Chung@osumc.edu}
+% \end{enumerate}
+
+\end{document}
