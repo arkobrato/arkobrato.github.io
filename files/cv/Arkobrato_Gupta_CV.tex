@@ -45,10 +45,8 @@
      {\itshape #2}
   \end{tabular}
   \ifx&#7&%
-  \else{\\%
-    \begin{minipage}{\maincolumnwidth}%
-      \small#7%
-    \end{minipage}}\fi%
+  \else\par\nobreak% details may break across pages between bullets
+    {\small\noindent#7\par}\fi%
   \par\addvspace{#1}}
 
 \newcommand*{\customcvproject}[4][.25em]{
@@ -85,6 +83,10 @@
 & \href{https://www.linkedin.com/in/arkobrato-gupta}{\faLinkedin\enspace arkobrato-gupta}
 & \href{https://orcid.org/0000-0001-5026-3085}{ORCID: 0000-0001-5026-3085}
 \end{tabular}
+\end{center}
+\vspace{-2mm}
+\begin{center}
+\small\textit{Research interests:} Bayesian methods, spatial and single-cell omics, statistical genomics, immuno-oncology, neurogenomics of addiction
 \end{center}
 
 \section{EDUCATION}
@@ -169,6 +171,13 @@
 \Needspace*{3\baselineskip}\item Nagy, G., Presley, R., Dhar, S., Jeon, H., Moreira, L., Tull, O., \textbf{Gupta, A.}, Chung, D., Tsichlis, P.\ N., $\&$ Parvin, J.\ D.\ (2024). Identification of TAP2 protein variants resistant to inhibition by the HSV1 ICP47 protein. \textit{bioRxiv}. \href{https://doi.org/10.1101/2024.11.18.624061}{doi:10.1101/2024.11.18.624061}\par\vspace{5pt}
 \Needspace*{3\baselineskip}\item Nagy, G., Presley, R., Jeon, H., \ldots, \textbf{Gupta, A.}, Banerjee, T., Chung, D., Tsichlis, P.\ N., $\&$ Parvin, J.\ D.\ (2024). Multiplexed functional analysis of TAP2 variants in regulating MHC-I cell surface abundance reveals overexpression of PLK1 downregulates antigen presentation. \textit{bioRxiv}. \href{https://doi.org/10.1101/2024.09.30.615919}{doi:10.1101/2024.09.30.615919}
 \end{itemize}
+\vskip 0.3cm
+\textbf{\textcolor{pink}{\large{$\quad$Manuscripts in Preparation}}}
+\vskip 0.2cm
+\begin{itemize}
+\Needspace*{3\baselineskip}\item \textbf{Gupta, A.}, et al. SRT: a statistical framework integrating spatial TCR-seq and spatial transcriptomics. \textit{In preparation}.\par\vspace{5pt}
+\Needspace*{3\baselineskip}\item \textbf{Gupta, A.}, et al. SCOPE: an interactive application for Bayesian stochastic block model clustering with uncertainty quantification. \textit{In preparation}.
+\end{itemize}
 \vspace{3pt}
 
 \fussy
@@ -189,6 +198,18 @@
 \vskip 0.1cm
 \Needspace*{3\baselineskip}\item \textbf{Gupta, A.}, et al.\ (2023). \textit{Annual Joint Biostatistics Symposium} 2023, Columbus, OH. Poster Presentation:\ SRT and graph-GPA 2.0.
 \end{itemize}
+\vskip 0.2cm
+\textbf{\textcolor{pink}{\large{$\quad$Departmental \& Lab Talks}}}
+\vskip 0.2cm
+\begin{itemize}
+\item Department student seminar talks (4), The Ohio State University
+\vskip 0.1cm
+\item Research presentations at collaborating laboratories (multiple) and regular Chung Research Group lab meetings
+\end{itemize}
+
+\Needspace*{4\baselineskip}
+\section{PROFESSIONAL MEMBERSHIPS}
+American Statistical Association (ASA); Eastern North American Region of the International Biometric Society (ENAR); Institute of Mathematical Statistics (IMS); American Public Health Association (APHA)
 
 \Needspace*{4\baselineskip}
 \section{AWARDS $\&$ SCHOLARSHIPS}
@@ -271,7 +292,7 @@ Guided three graduate students in dentistry, epidemiology, and computational lin
 \Needspace*{4\baselineskip}
 \section{SOFTWARE}
 \begin{itemize}
-\item \textbf{SCOPE:} R Shiny app for Bayesian stochastic block model clustering with posterior uncertainty quantification; used by 5+ labs in the USA, Italy, and the UK.
+\item \textbf{SCOPE:} R Shiny app for Bayesian stochastic block model clustering with posterior uncertainty quantification; used by 5+ labs in the USA, Italy, and the UK. \href{https://chunglab.bmi.osumc.edu/SCOPE/}{chunglab.bmi.osumc.edu/SCOPE}
 \vskip 0.1cm
 \item \textbf{SRT:} Statistical framework for integrating spatial TCR-seq and transcriptomics data.
 \end{itemize}
@@ -301,12 +322,9 @@ Helped produce the annual magazine of the Department of Statistics, St.\ Xavier'
 
 \Needspace*{4\baselineskip}
 \section{REFERENCES}
-Available upon request.
-% \textbf{\textcolor{pink}{\large{Contact information:}}}
-% \begin{enumerate}
-%     \vskip 0.35cm
-%     \item Dongjun Chung, PhD \\ Associate Professor\\ Department of Biomedical Informatics, College of Medicine\\
-% The Ohio State University\\\url{Dongjun.Chung@osumc.edu}
-% \end{enumerate}
+\textbf{Dongjun Chung, PhD}\\
+Associate Professor, Department of Biomedical Informatics, College of Medicine\\
+The Ohio State University, Columbus, OH\\
+\href{mailto:Dongjun.Chung@osumc.edu}{Dongjun.Chung@osumc.edu}
 
 \end{document}
