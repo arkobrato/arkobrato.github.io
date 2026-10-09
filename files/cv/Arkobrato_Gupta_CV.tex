@@ -72,6 +72,7 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
+\raggedbottom % fill pages naturally instead of stretching to the bottom margin
 \makecvtitle
 \vspace*{-10mm}
 
@@ -87,58 +88,62 @@
 \end{center}
 
 \section{EDUCATION}
-\needspace{5\baselineskip}{\customcventry{Aug 2021 - Aug 2027 (expected)}{\textbullet\, Ph.D. in Biostatistics \& M.S. in Statistics}{The Ohio State University}{Columbus, OH, USA}{}{\textbullet\, Advisor: Dr.\ Dongjun Chung\\
+\Needspace*{5\baselineskip}{\customcventry{Aug 2021 - Aug 2027 (expected)}{\textbullet\, Ph.D. in Biostatistics \& M.S. in Statistics}{The Ohio State University}{Columbus, OH, USA}{}{\textbullet\, Advisor: Dr.\ Dongjun Chung\\
 \textbullet\, Dissertation:\ Statistical frameworks integrating multi-modal biological data, with applications in immuno-oncology and neurogenomics of opioid use disorder\\
 \textbullet\, Coursework:\ Advanced Survival Analysis, Statistical Genetics, Causal Inference, Bayesian Inference, MCMC, Bioinformatics \& Machine Learning in Omics}}
-\needspace{5\baselineskip}{\customcventry{Jul 2017 - Jun 2019}{\textbullet\, M.S. in Statistics}{Hindu College, University of Delhi}{New Delhi, India}{}{}}
-\needspace{5\baselineskip}{\customcventry{Jul 2014 - Jun 2017}{\textbullet\, B.S. (Hons.) in Statistics}{St.\ Xavier's College, University of Calcutta}{Kolkata, India}{}{\textbullet\, Thesis:\ Bayesian hierarchical modeling (MCMC:\ Gibbs, Metropolis-Hastings) in astro-statistics}}
+\Needspace*{5\baselineskip}{\customcventry{Jul 2017 - Jun 2019}{\textbullet\, M.S. in Statistics}{Hindu College, University of Delhi}{New Delhi, India}{}{}}
+\Needspace*{5\baselineskip}{\customcventry{Jul 2014 - Jun 2017}{\textbullet\, B.S. (Hons.) in Statistics}{St.\ Xavier's College, University of Calcutta}{Kolkata, India}{}{\textbullet\, Thesis:\ Bayesian hierarchical modeling in astro-statistics\\
+\textbullet\, Implemented MCMC samplers (Gibbs, Metropolis-Hastings) to fit Bayesian hierarchical models to astronomical data}}
 
-\needspace{4\baselineskip}
+\Needspace*{4\baselineskip}
 \section{RESEARCH EXPERIENCE}
-\needspace{5\baselineskip}{\customcventry{May 2022 - Present}{Graduate Research Associate}{The Ohio State University Comprehensive Cancer Center}{Columbus, OH, USA}{}
-{Pelotonia Institute for Immuno-Oncology
+\Needspace*{5\baselineskip}{\customcventry{May 2022 - Present}{Graduate Research Associate}{The Ohio State University Comprehensive Cancer Center}{Columbus, OH, USA}{}
+{Pelotonia Institute for Immuno-Oncology\\[2pt]
+\textit{Dissertation research}
 \begin{itemize}
-  \item \textbf{SRT:} Developed a statistical framework integrating spatial TCR-seq and transcriptomics (earth-mover's distance + Gaussian-mixture FDR) that identified 878 genes coupled with T-cell diversity in glioblastoma; a biomarker-discovery method for the tumor microenvironment.
-  \item \textbf{SCOPE:} Built an R Shiny app implementing a Bayesian stochastic block model clustering framework (modularity-initialized Gibbs sampling with posterior uncertainty quantification), adopted by 5+ labs across the USA and international partners (Italy, UK).
+  \item \textbf{SRT:} Developed a statistical framework integrating spatial TCR-seq and spatial transcriptomics (earth-mover's distance + Gaussian-mixture FDR control); identified 878 genes coupled with T-cell clonal diversity in glioblastoma, enabling biomarker discovery in the tumor microenvironment.
+  \item \textbf{Opioid use disorder} (with multi-site collaborators): Developed Bayesian stochastic block model clustering for 900+ genetically diverse rats, classifying heroin-use-disorder vulnerable, intermediate, and resilient phenotypes and revealing sex-specific subgroups within the vulnerable phenotype (\textit{American Journal of Psychiatry}, 2025). Extending the framework to link behavioral subgroups with brain-region gene expression.
+  \item \textbf{SCOPE:} Built an R Shiny app implementing this clustering framework (modularity-initialized Gibbs sampling with posterior uncertainty quantification); adopted by 5+ labs in the USA, Italy, and the UK.
 \end{itemize}
-\textit{Collaborative applications (Dissertation Aim 2):}
+\textit{Collaborative projects}
 \begin{itemize}
-  \item \textbf{Opioid use disorder:} Developed a Bayesian stochastic block model framework to identify behavioral subgroups in a multi-symptomatic rat model of heroin use disorder (900+ rats); linked subgroups to brain-region gene expression, with ongoing extension to multivariate phenotype-expression association. Published in \textit{American Journal of Psychiatry} (2025).
-  \item \textbf{DNA methylation:} Co-led a genome-wide EWAS (Illumina EPIC; 802,978 CpGs; $n = 324$ postmenopausal women) identifying 736 differentially methylated loci between Native Hawaiian and White women, linked to liver disease pathways (61\% of genes), DASH diet adherence, and adiponectin; published as co-first author in \textit{Scientific Reports} (2025).
-  \item \textbf{Comparative oncology:} Performed statistical analysis characterizing the immune landscape of canine soft tissue sarcomas as a model for human soft tissue sarcomas; published in \textit{Cancers} (2025).
+  \item \textbf{DNA methylation:} Co-led a genome-wide EWAS (Illumina EPIC; 802,978 CpGs; $n = 324$ postmenopausal women) identifying 736 differentially methylated loci between Native Hawaiian and White women, associated with liver disease pathways (61\% of genes), DASH diet adherence, and adiponectin (\textit{Scientific Reports}, 2025; co-first author).
+  \item \textbf{Comparative oncology:} Performed statistical analyses of clinical, histopathologic, and gene expression data from 75 dogs with soft tissue sarcoma; higher FOXP3$^+$ regulatory T-cell infiltration was associated with shorter progression-free intervals, and tumors resembled human undifferentiated pleomorphic sarcoma, supporting canine sarcoma as a preclinical model (\textit{Cancers}, 2025).
 \end{itemize}
 }}
 \vspace{0.1cm}
-\needspace{5\baselineskip}{\customcventry{Aug - Sep 2018}{Research Intern}{Indian Institute of Management (IIM) Ahmedabad}{Ahmedabad, India}{}
+\Needspace*{5\baselineskip}{\customcventry{Aug - Sep 2018}{Research Intern}{Indian Institute of Management (IIM) Ahmedabad}{Ahmedabad, India}{}
 {\begin{itemize}
   \item Collaborated with a multidisciplinary team to quantify public support for nuclear energy using survey data and regression analysis.
 \end{itemize}
 }}
 \vspace{0.1cm}
-\needspace{5\baselineskip}{\customcventry{Jun - Jul 2018}{Research Intern}{National Sample Survey Office (NSSO), Govt.\ of India}{Kolkata, India}{}
+\Needspace*{5\baselineskip}{\customcventry{Jun - Jul 2018}{Research Intern}{National Sample Survey Office (NSSO), Govt.\ of India}{Kolkata, India}{}
 {\begin{itemize}
   \item Analyzed national sample survey data using logistic regression and survey methods to identify determinants of catastrophic health expenditure in India; presented findings to the Ministry.
 \end{itemize}
 }}
 
-\needspace{4\baselineskip}
+\Needspace*{4\baselineskip}
 \section{INDUSTRY EXPERIENCE}
-\needspace{5\baselineskip}{\customcventry{Summers 2025 \& 2026}{Biostatistics Intern}{Abbott Nutrition}{Columbus, OH, USA}{}
+\Needspace*{5\baselineskip}{\customcventry{Summers 2025 \& 2026}{Biostatistics Intern}{Abbott Nutrition}{Columbus, OH, USA}{}
 {\begin{itemize}
   \item \textbf{2025:} Analyzed a propensity-matched NHANES cohort ($n = 6{,}508$; 2011--2018): adults consuming $\geq$1.2 g/kg/day protein had 1.2\% greater lean soft tissue ($p < 0.001$), independent of physical activity, supporting protein guidelines for healthy aging.
   \item Owned the full analysis lifecycle: cohort definition, statistical method selection, confounder adjustment, and inference; communicated results to scientific stakeholders and presented to leadership. Accepted for poster presentation at ICFSR 2026 (Washington, DC).
-  \item \textbf{2026:} Completed and presented an individual participant data (IPD) meta-analysis across 14 clinical trials evaluating intervention effects on key health outcomes.
+  \item \textbf{2026:} Conducted an individual participant data (IPD) meta-analysis of 14 clinical trials using both two-stage and one-stage (mixed-effects) approaches, and explored mixture models to capture heterogeneity in intervention effects on key health outcomes; presented results to the team.
 \end{itemize}
 }}
 \vspace{0.1cm}
-\needspace{5\baselineskip}{\customcventry{Aug 2019 - Jul 2021}{Statistical Programmer}{Novartis Healthcare Pvt.\ Ltd.}{Hyderabad, India}{}
+\Needspace*{5\baselineskip}{\customcventry{Aug 2019 - Jul 2021}{Statistical Programmer}{Novartis Healthcare Pvt.\ Ltd.}{Hyderabad, India}{}
 {\begin{itemize}
-  \item Selected and implemented statistical methods under statistical analysis plans (SAPs), delivering CDISC-compliant SAS/R programming (SDTM, ADaM, TFL) across three clinical trials, including the pivotal Phase III study for Kisqali (ribociclib).
+  \item Programmed SDTM and ADaM datasets and tables, listings, and figures (TFLs) in SAS and R to CDISC standards for three clinical trials, including the pivotal Phase III study of Kisqali (ribociclib) in breast cancer.
+  \item Implemented the statistical methods specified in statistical analysis plans (SAPs), working with trial statisticians on analysis specifications and outputs.
+  \item Performed independent double programming and quality-control validation of datasets and outputs to ensure accuracy and submission readiness.
   \item Built reporting databases supporting regulatory submissions across solid-tumor oncology and respiratory therapeutic areas.
 \end{itemize}
 }}
 
-\needspace{4\baselineskip}
+\Needspace*{4\baselineskip}
 \section{PUBLICATIONS}
 \sloppy % let long DOIs wrap instead of running into the margin
 \vskip 0.3cm
@@ -147,44 +152,44 @@
 \begin{itemize}
 \item[] $*$ Joint first authors
 \vskip 0.15cm
-\item Song, M.\ A.$^*$, \textbf{Gupta, A.$^*$}, Park, S.\ Y., Kim, J., Archer, K.\ J., Tiirikainen, M., Franke, A., Wilkens, L.\ R., Le Marchand, L., Chung, D., $\&$ Lim, U.\ (2025). Differential blood DNA methylation loci between Native Hawaiian and White women are associated with dietary patterns and metabolic biomarkers. \textit{Scientific Reports}, 15, 43191. \href{https://doi.org/10.1038/s41598-025-25253-4}{doi:10.1038/s41598-025-25253-4}\par\vspace{5pt}
-\item Kuhn, B.\ N., Cannella, N., Crow, A.\ D., Lunerti, V., \textbf{Gupta, A.}, Walterhouse, S.\ J., \ldots, Chung, D., Ciccocioppo, R., $\&$ Kalivas, P.\ W.\ (2025). Distinct behavioral profiles and neuronal correlates of heroin vulnerability versus resiliency in a multi-symptomatic model of heroin use disorder in rats. \textit{American Journal of Psychiatry}, 182(2), 198--208. \href{https://doi.org/10.1176/appi.ajp.20230623}{doi:10.1176/appi.ajp.20230623}\par\vspace{5pt}
-\item Kuhn, B.\ N., Cannella, N., Chitre, A.\ S., \ldots, \textbf{Gupta, A.}, \ldots, Chung, D., \ldots\ $\&$ Palmer, A.\ A.\ (2025). Genome-wide association study reveals multiple loci for nociception and opioid consumption behaviors associated with heroin vulnerability in outbred rats. \textit{Molecular Psychiatry}, 30(8), 3363--3375. \href{https://doi.org/10.1038/s41380-025-02922-4}{doi:10.1038/s41380-025-02922-4}\par\vspace{5pt}
-\item Hayburn, R., Chung, D., \textbf{Gupta, A.}, Sills, S., Wu, J.\ D., Ambrus, A., Jing, W., Ng, J., Penaloza-MacMaster, P., Selmek, A., Pollack, S.\ M., $\&$ Bracha, S.\ (2025). The immune landscape of canine soft tissue sarcomas as a model for human soft tissue sarcomas. \textit{Cancers}, 17(23), 3860. \href{https://doi.org/10.3390/cancers17233860}{doi:10.3390/cancers17233860}\par\vspace{5pt}
-\item Deng, Q.$^*$, \textbf{Gupta, A.$^*$}, Jeon, H.$^*$, Nam, J.\ H., Yilmaz, A.\ S., Chang, W., Pietrzak, M., Li, L., Kim, H.\ J., $\&$ Chung, D.\ (2023). graph-GPA 2.0: improving multi-disease genetic analysis with integration of functional annotation data. \textit{Frontiers in Genetics}, 14. \href{https://doi.org/10.3389/fgene.2023.1079198}{doi:10.3389/fgene.2023.1079198}\par\vspace{5pt}
-\item Jeon, H., Xie, J., Jeon, Y., Jung, K.\ J., \textbf{Gupta, A.}, Chang, W., $\&$ Chung, D.\ (2023). Statistical power analysis for designing bulk, single-cell, and spatial transcriptomics experiments: review, tutorial, and perspectives. \textit{Biomolecules}, 13(2), 221. \href{https://doi.org/10.3390/biom13020221}{doi:10.3390/biom13020221}
+\Needspace*{3\baselineskip}\item Song, M.\ A.$^*$, \textbf{Gupta, A.$^*$}, Park, S.\ Y., Kim, J., Archer, K.\ J., Tiirikainen, M., Franke, A., Wilkens, L.\ R., Le Marchand, L., Chung, D., $\&$ Lim, U.\ (2025). Differential blood DNA methylation loci between Native Hawaiian and White women are associated with dietary patterns and metabolic biomarkers. \textit{Scientific Reports}, 15, 43191. \href{https://doi.org/10.1038/s41598-025-25253-4}{doi:10.1038/s41598-025-25253-4}\par\vspace{5pt}
+\Needspace*{3\baselineskip}\item Kuhn, B.\ N., Cannella, N., Crow, A.\ D., Lunerti, V., \textbf{Gupta, A.}, Walterhouse, S.\ J., \ldots, Chung, D., Ciccocioppo, R., $\&$ Kalivas, P.\ W.\ (2025). Distinct behavioral profiles and neuronal correlates of heroin vulnerability versus resiliency in a multi-symptomatic model of heroin use disorder in rats. \textit{American Journal of Psychiatry}, 182(2), 198--208. \href{https://doi.org/10.1176/appi.ajp.20230623}{doi:10.1176/appi.ajp.20230623}\par\vspace{5pt}
+\Needspace*{3\baselineskip}\item Kuhn, B.\ N., Cannella, N., Chitre, A.\ S., \ldots, \textbf{Gupta, A.}, \ldots, Chung, D., \ldots\ $\&$ Palmer, A.\ A.\ (2025). Genome-wide association study reveals multiple loci for nociception and opioid consumption behaviors associated with heroin vulnerability in outbred rats. \textit{Molecular Psychiatry}, 30(8), 3363--3375. \href{https://doi.org/10.1038/s41380-025-02922-4}{doi:10.1038/s41380-025-02922-4}\par\vspace{5pt}
+\Needspace*{3\baselineskip}\item Hayburn, R., Chung, D., \textbf{Gupta, A.}, Sills, S., Wu, J.\ D., Ambrus, A., Jing, W., Ng, J., Penaloza-MacMaster, P., Selmek, A., Pollack, S.\ M., $\&$ Bracha, S.\ (2025). The immune landscape of canine soft tissue sarcomas as a model for human soft tissue sarcomas. \textit{Cancers}, 17(23), 3860. \href{https://doi.org/10.3390/cancers17233860}{doi:10.3390/cancers17233860}\par\vspace{5pt}
+\Needspace*{3\baselineskip}\item Deng, Q.$^*$, \textbf{Gupta, A.$^*$}, Jeon, H.$^*$, Nam, J.\ H., Yilmaz, A.\ S., Chang, W., Pietrzak, M., Li, L., Kim, H.\ J., $\&$ Chung, D.\ (2023). graph-GPA 2.0: improving multi-disease genetic analysis with integration of functional annotation data. \textit{Frontiers in Genetics}, 14. \href{https://doi.org/10.3389/fgene.2023.1079198}{doi:10.3389/fgene.2023.1079198}\par\vspace{5pt}
+\Needspace*{3\baselineskip}\item Jeon, H., Xie, J., Jeon, Y., Jung, K.\ J., \textbf{Gupta, A.}, Chang, W., $\&$ Chung, D.\ (2023). Statistical power analysis for designing bulk, single-cell, and spatial transcriptomics experiments: review, tutorial, and perspectives. \textit{Biomolecules}, 13(2), 221. \href{https://doi.org/10.3390/biom13020221}{doi:10.3390/biom13020221}
 \end{itemize}
 \vskip 0.3cm
 \textbf{\textcolor{pink}{\large{$\quad$Preprints}}}
 \vskip 0.2cm
 \begin{itemize}
-\item Shin, J., Yoo, J., Cho, Y., \textbf{Gupta, A.}, Mao, P.-H., Thakkar, K., Eddy, T.\ A., Chung, K.\ J., Kim, J., Jeon, H., Xie, J., $\&$ Chung, D.\ (2026). Circular data analysis for spatial omics. \textit{bioRxiv}. \href{https://doi.org/10.64898/2026.09.29.755467}{doi:10.64898/2026.09.29.755467}\par\vspace{5pt}
-\item Walterhouse, S.\ J., Crow, A.\ D., Dereschewitz, E., Hopkins, J.\ L., \textbf{Gupta, A.}, Hodebourg, R., Chung, D., Kalivas, P.\ W., Garcia-Keller, C., $\&$ Kuhn, B.\ N.\ (2026). Attenuation of nucleus accumbens dendritic spine density following protracted abstinence in heroin vulnerable rats. \textit{Preprint}.\par\vspace{5pt}
-\item Nagy, G., Presley, R., Dhar, S., Jeon, H., Moreira, L., Tull, O., \textbf{Gupta, A.}, Chung, D., Tsichlis, P.\ N., $\&$ Parvin, J.\ D.\ (2024). Identification of TAP2 protein variants resistant to inhibition by the HSV1 ICP47 protein. \textit{bioRxiv}. \href{https://doi.org/10.1101/2024.11.18.624061}{doi:10.1101/2024.11.18.624061}\par\vspace{5pt}
-\item Nagy, G., Presley, R., Jeon, H., \ldots, \textbf{Gupta, A.}, Banerjee, T., Chung, D., Tsichlis, P.\ N., $\&$ Parvin, J.\ D.\ (2024). Multiplexed functional analysis of TAP2 variants in regulating MHC-I cell surface abundance reveals overexpression of PLK1 downregulates antigen presentation. \textit{bioRxiv}. \href{https://doi.org/10.1101/2024.09.30.615919}{doi:10.1101/2024.09.30.615919}
+\Needspace*{3\baselineskip}\item Shin, J., Yoo, J., Cho, Y., \textbf{Gupta, A.}, Mao, P.-H., Thakkar, K., Eddy, T.\ A., Chung, K.\ J., Kim, J., Jeon, H., Xie, J., $\&$ Chung, D.\ (2026). Circular data analysis for spatial omics. \textit{bioRxiv}. \href{https://doi.org/10.64898/2026.09.29.755467}{doi:10.64898/2026.09.29.755467}\par\vspace{5pt}
+\Needspace*{3\baselineskip}\item Walterhouse, S.\ J., Crow, A.\ D., Dereschewitz, E., Hopkins, J.\ L., \textbf{Gupta, A.}, Hodebourg, R., Chung, D., Kalivas, P.\ W., Garcia-Keller, C., $\&$ Kuhn, B.\ N.\ (2026). Attenuation of nucleus accumbens dendritic spine density following protracted abstinence in heroin vulnerable rats. \textit{Preprint}.\par\vspace{5pt}
+\Needspace*{3\baselineskip}\item Nagy, G., Presley, R., Dhar, S., Jeon, H., Moreira, L., Tull, O., \textbf{Gupta, A.}, Chung, D., Tsichlis, P.\ N., $\&$ Parvin, J.\ D.\ (2024). Identification of TAP2 protein variants resistant to inhibition by the HSV1 ICP47 protein. \textit{bioRxiv}. \href{https://doi.org/10.1101/2024.11.18.624061}{doi:10.1101/2024.11.18.624061}\par\vspace{5pt}
+\Needspace*{3\baselineskip}\item Nagy, G., Presley, R., Jeon, H., \ldots, \textbf{Gupta, A.}, Banerjee, T., Chung, D., Tsichlis, P.\ N., $\&$ Parvin, J.\ D.\ (2024). Multiplexed functional analysis of TAP2 variants in regulating MHC-I cell surface abundance reveals overexpression of PLK1 downregulates antigen presentation. \textit{bioRxiv}. \href{https://doi.org/10.1101/2024.09.30.615919}{doi:10.1101/2024.09.30.615919}
 \end{itemize}
 \vspace{3pt}
 
 \fussy
-\needspace{4\baselineskip}
+\Needspace*{4\baselineskip}
 \section{PRESENTATIONS}
 \begin{itemize}
-\item \textbf{Gupta, A.} (2026). \textit{Joint Statistical Meetings (JSM)} 2026. Oral Presentation:\ SRT, a statistical framework integrating spatial TCR-seq and transcriptomics (dissertation research).
+\Needspace*{3\baselineskip}\item \textbf{Gupta, A.} (2026). \textit{Joint Statistical Meetings (JSM)} 2026. Oral Presentation:\ SRT, a statistical framework integrating spatial TCR-seq and transcriptomics (dissertation research).
 \vskip 0.1cm
-\item \textbf{Gupta, A.}, et al.\ (2026). \textit{International Conference on Frailty \& Sarcopenia Research (ICFSR)} 2026, Washington, DC. Poster (presented by a co-author):\ Protein intake and lean soft tissue in a propensity-matched NHANES cohort.
+\Needspace*{3\baselineskip}\item \textbf{Gupta, A.}, et al.\ (2026). \textit{International Conference on Frailty \& Sarcopenia Research (ICFSR)} 2026, Washington, DC. Poster (presented by a co-author):\ Protein intake and lean soft tissue in a propensity-matched NHANES cohort.
 \vskip 0.1cm
-\item \textbf{Gupta, A.} (2026). \textit{Midwest Biopharmaceutical Statistics Workshop (MBSW)} 2026. Poster Presentation:\ SRT.
+\Needspace*{3\baselineskip}\item \textbf{Gupta, A.} (2026). \textit{Midwest Biopharmaceutical Statistics Workshop (MBSW)} 2026. Poster Presentation:\ SRT.
 \vskip 0.1cm
-\item \textbf{Gupta, A.} (2026). \textit{ENAR Spring Meeting} 2026. Oral Presentation:\ SRT (dissertation research).
+\Needspace*{3\baselineskip}\item \textbf{Gupta, A.} (2026). \textit{ENAR Spring Meeting} 2026. Oral Presentation:\ SRT (dissertation research).
 \vskip 0.1cm
-\item \textbf{Gupta, A.} (2026). \textit{Annual Joint Biostatistics Symposium} 2026, Columbus, OH. Poster Presentation:\ SRT and graph-GPA 2.0.
+\Needspace*{3\baselineskip}\item \textbf{Gupta, A.} (2026). \textit{Annual Joint Biostatistics Symposium} 2026, Columbus, OH. Poster Presentation:\ SRT and graph-GPA 2.0.
 \vskip 0.1cm
-\item \textbf{Gupta, A.} (2023). \textit{ICSA Midwest Chapter \& NIC-ASA Joint Fall Meeting} 2023. Poster Presentation:\ graph-GPA 2.0:\ improving multi-disease genetic analysis.
+\Needspace*{3\baselineskip}\item \textbf{Gupta, A.} (2023). \textit{ICSA Midwest Chapter \& NIC-ASA Joint Fall Meeting} 2023. Poster Presentation:\ graph-GPA 2.0:\ improving multi-disease genetic analysis.
 \vskip 0.1cm
-\item \textbf{Gupta, A.} (2023). \textit{Annual Joint Biostatistics Symposium} 2023, Columbus, OH. Poster Presentation:\ SRT and graph-GPA 2.0.
+\Needspace*{3\baselineskip}\item \textbf{Gupta, A.} (2023). \textit{Annual Joint Biostatistics Symposium} 2023, Columbus, OH. Poster Presentation:\ SRT and graph-GPA 2.0.
 \end{itemize}
 
-\needspace{4\baselineskip}
+\Needspace*{4\baselineskip}
 \section{AWARDS $\&$ SCHOLARSHIPS}
 \begin{itemize}
 \vskip 0.1cm
@@ -200,31 +205,34 @@
     Five-year award for students in the top 1 percentile
  \end{itemize}
 
-\needspace{4\baselineskip}
+\Needspace*{4\baselineskip}
 \section{RESEARCH GROUP ACTIVITIES}
 \begin{itemize}
-\needspace{3\baselineskip}\item \textbf{Immuno-Oncology Informatics Group (IOIG), Pelotonia Institute}\\
+\vskip 0.1cm
+\Needspace*{3\baselineskip}\item \textbf{Immuno-Oncology Informatics Group (IOIG), Pelotonia Institute}\\
 Contributed to the institute's immuno-oncology research services through data analysis, statistical consultation, and training; presented project updates at monthly group meetings.
-\needspace{2\baselineskip}\item \textbf{Chung Research Group, The Ohio State University}\\
+\vskip 0.1cm
+\Needspace*{2\baselineskip}\item \textbf{Chung Research Group, The Ohio State University}\\
 Regularly presented at lab meetings, giving detailed updates on research progress, reviewing relevant literature, and leading discussions among lab members.
 \end{itemize}
 
-\needspace{4\baselineskip}
+\Needspace*{4\baselineskip}
 \section{LEADERSHIP $\&$ SERVICE}
 \begin{itemize}
-\needspace{3\baselineskip}\item \textbf{Student Representative, Columbus Chapter, American Statistical Association (ASA)} (2026 - 2027)
-\needspace{3\baselineskip}\item \textbf{President, Statistics \& Biostatistics Graduate Student Association, The Ohio State University} (Aug 2024 - Aug 2025)\\
+\Needspace*{3\baselineskip}\item \textbf{Student Representative, Columbus Chapter, American Statistical Association (ASA)} (2026 - 2027)
+\Needspace*{3\baselineskip}\item \textbf{President, Statistics \& Biostatistics Graduate Student Association, The Ohio State University} (Aug 2024 - Aug 2025)\\
 Led a 100+ member organization; liaised between graduate students and department administration.
-\needspace{3\baselineskip}\item \textbf{Officer, Public Health Graduate Student Association (PHGSA), The Ohio State University} (Aug 2022 - Aug 2023)\\
+\Needspace*{3\baselineskip}\item \textbf{Officer, Public Health Graduate Student Association (PHGSA), The Ohio State University} (Aug 2022 - Aug 2023)\\
 Served as an officer of the graduate student association for the College of Public Health.
-\needspace{3\baselineskip}\item \textbf{Placement Coordinator, Department of Statistics, University of Delhi} (Jan 2018 - Jun 2019)\\
+\Needspace*{3\baselineskip}\item \textbf{Placement Coordinator, Department of Statistics, University of Delhi} (Jan 2018 - Jun 2019)\\
 Coordinated full-time placements for 70+ students and internships for 70+ students; invited, hosted, and communicated with recruiting companies, and helped train students for the recruitment process.
  \end{itemize}
 
-\needspace{4\baselineskip}
+\Needspace*{4\baselineskip}
 \section{TEACHING EXPERIENCE}
-\needspace{5\baselineskip}{\customcventry{Aug 2026 - Present}{Instructor \& Graduate Teaching Associate}{The Ohio State University}{Columbus, OH, USA}{}
-{\begin{itemize}
+\Needspace*{5\baselineskip}{\customcventry{Aug 2026 - Present}{Instructor \& Graduate Teaching Associate}{The Ohio State University}{Columbus, OH, USA}{}
+{Division of Biostatistics, College of Public Health
+\begin{itemize}
   \item Instructor, PUBHBIO 2210: Biostatistics for Public Health Research (undergraduate)\\
   Teaching two sections (50 students in total)
   \item Graduate Teaching Associate, PUBHBIO 7255: Introduction to Causal Inference (graduate)
@@ -232,14 +240,23 @@ Coordinated full-time placements for 70+ students and internships for 70+ studen
 }}
 \pagebreak[0]% allow a page break between teaching entries
 \vspace{0.2cm}
-\needspace{5\baselineskip}{\customcventry{Aug 2021 - May 2022}{Graduate Teaching Associate}{The Ohio State University}{Columbus, OH, USA}{}
-{\begin{itemize}
+\Needspace*{5\baselineskip}{\customcventry{Aug 2021 - May 2022}{Graduate Teaching Associate}{The Ohio State University}{Columbus, OH, USA}{}
+{Division of Biostatistics, College of Public Health
+\begin{itemize}
   \item PUBHBIO 2210: Biostatistics for Public Health Research (undergraduate)
   \item PUBHBIO 6270: Introduction to SAS for Public Health Students (graduate)
 \end{itemize}
 }}
 
-\needspace{4\baselineskip}
+\Needspace*{4\baselineskip}
+\section{SOFTWARE}
+\begin{itemize}
+\item \textbf{SCOPE:} R Shiny app for Bayesian stochastic block model clustering with posterior uncertainty quantification; used by 5+ labs in the USA, Italy, and the UK.
+\vskip 0.1cm
+\item \textbf{SRT:} Statistical framework for integrating spatial TCR-seq and transcriptomics data.
+\end{itemize}
+
+\Needspace*{4\baselineskip}
 \section{SKILLS}
 \begin{itemize}
    \item \textbf{Clinical \& Regulatory:} CDISC (SDTM, ADaM, TFL), Phase I-III trial programming, survival analysis, causal inference, mixed models
@@ -248,7 +265,7 @@ Coordinated full-time placements for 70+ students and internships for 70+ studen
    \item \textbf{Programming \& Software:} R (Shiny, R Markdown, Quarto), SAS, LaTeX, VS Code; also C, C++, Stata, SPSS, SQL
 \end{itemize}
 
-\needspace{4\baselineskip}
+\Needspace*{4\baselineskip}
 \section{REFERENCES}
 Available upon request.
 % \textbf{\textcolor{pink}{\large{Contact information:}}}
