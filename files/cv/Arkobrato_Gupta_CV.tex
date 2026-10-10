@@ -9,6 +9,10 @@
 \moderncvstyle{casual}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{red}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\makecvhead}{\if@right\raggedleft\fi}{\centering}{}{}
+\makeatother
 
 % character encoding
 \usepackage[utf8]{inputenc}
@@ -72,6 +76,7 @@
 \begin{document}
 \raggedbottom % fill pages naturally instead of stretching to the bottom margin
 \interlinepenalty=10000 % never split a bullet or paragraph across pages
+\emergencystretch=1em % let tight lines stretch instead of running into the margin
 \makecvtitle
 \vspace*{-10mm}
 
@@ -99,18 +104,18 @@
 
 \Needspace*{7\baselineskip}
 \section{RESEARCH EXPERIENCE}
-\Needspace*{5\baselineskip}{\customcventry{May 2022 - Present}{Graduate Research Associate}{The Ohio State University Comprehensive Cancer Center}{Columbus, OH, USA}{}
+\Needspace*{5\baselineskip}{\customcventry{May 2022 - May 2026}{Graduate Research Associate}{The Ohio State University Comprehensive Cancer Center}{Columbus, OH, USA}{}
 {Pelotonia Institute for Immuno-Oncology\\[2pt]
 \textit{Dissertation research}
 \begin{itemize}
-  \item \textbf{SRT:} statistical framework for integrating spatial TCR-seq and spatial transcriptomics
+  \item \textbf{SRT:} Statistical framework for integrating spatial TCR-seq and spatial transcriptomics
   \begin{itemize}
     \item Combines earth-mover's distance with Gaussian-mixture FDR control
     \item Identified 878 genes coupled with T-cell clonal diversity in glioblastoma, enabling biomarker discovery in the tumor microenvironment
   \end{itemize}
-  \item \textbf{Opioid use disorder} (with multi-site collaborators; \textit{American Journal of Psychiatry}, 2025)
+  \item \textbf{Opioid use disorder} (with multi-site collaborators)
   \begin{itemize}
-    \item Developed Bayesian stochastic block model clustering for 900+ genetically diverse rats
+    \item Developed Bayesian stochastic block model clustering framework for 900+ genetically diverse rats
     \item Classified heroin-use-disorder vulnerable, intermediate, and resilient phenotypes and revealed sex-specific subgroups within the vulnerable phenotype
     \item Extending the framework to link behavioral subgroups with brain-region gene expression
   \end{itemize}
@@ -140,11 +145,10 @@
     \item Higher FOXP3$^+$ regulatory T-cell infiltration was associated with shorter progression-free intervals
     \item Tumors resembled human undifferentiated pleomorphic sarcoma, supporting canine sarcoma as a preclinical model
   \end{itemize}
-  \item \textbf{Glioblastoma myeloid landscape} (with Dr.\ Xue Han, Department of Microbial Infection and Immunity; supported a grant application, 2025)
+    \item \textbf{Glioblastoma myeloid landscape} (supported a grant application, 2025)
   \begin{itemize}
-    \item Analyzed a public glioblastoma scRNA-seq dataset (100,000+ cells) in Seurat: quality control, normalization, clustering, and UMAP
-    \item Annotated six myeloid populations (microglia, macrophages, classical monocytes, dendritic cells, neutrophils, ISG-expressing cells) by combining ScType with a curated marker database, SingleR, and gene-signature scoring (UCell, module scores)
-    \item Profiled immune checkpoint ligand expression (e.g., VISTA, PD-L1, PD-L2, TIM-3, B7-H3) across myeloid subsets
+   \item Analyzed public glioblastoma scRNA-seq data (100,000+ cells) to annotate six myeloid populations using Seurat, ScType, SingleR, and gene-signature scoring
+    \item Profiled immune checkpoint ligand expression (e.g., VISTA, PD-L1, TIM-3) across myeloid subsets
   \end{itemize}
   \item \textbf{Breast cancer biomarkers}
   \begin{itemize}
@@ -162,7 +166,7 @@
 \vspace{0.1cm}
 \Needspace*{5\baselineskip}{\customcventry{Jun - Jul 2018}{Research Intern}{National Sample Survey Office (NSSO), Govt.\ of India}{Kolkata, India}{}
 {\begin{itemize}
-  \item Analyzed national sample survey data using logistic regression and survey methods to identify determinants of catastrophic health expenditure in India; presented findings to the Ministry.
+  \item Analyzed national sample survey data using logistic regression and survey methods to identify determinants of catastrophic health expenditure in India. Presented findings to the Ministry.
 \end{itemize}
 }}
 
@@ -170,15 +174,24 @@
 \section{INDUSTRY EXPERIENCE}
 \Needspace*{5\baselineskip}{\customcventry{Summers 2025 \& 2026}{Biostatistics Intern}{Abbott Nutrition}{Columbus, OH, USA}{}
 {\begin{itemize}
-  \item \textbf{2025:} Analyzed a propensity-matched NHANES cohort ($n = 6{,}508$; 2011--2018): adults consuming $\geq$1.2 g/kg/day protein had 1.2\% greater lean soft tissue ($p < 0.001$), independent of physical activity, supporting protein guidelines for healthy aging.
-  \item Owned the full analysis lifecycle: cohort definition, statistical method selection, confounder adjustment, and inference; communicated results to scientific stakeholders and presented to leadership. Accepted for poster presentation at ICFSR 2026 (Washington, DC).
-  \item \textbf{2026:} Conducted an individual participant data (IPD) meta-analysis of 14 clinical trials using both two-stage and one-stage (mixed-effects) approaches, and explored mixture models to capture heterogeneity in intervention effects on key health outcomes; presented results to the team.
+  \item \textbf{2025:} 
+  \begin{itemize}
+      \item Analyzed a propensity-matched NHANES cohort ($n = 6{,}508$; 2011--2018): adults consuming $\geq$1.2 g/kg/day protein had 1.2\% greater lean soft tissue ($p < 0.001$), independent of physical activity, supporting protein guidelines for healthy aging.
+      \item Owned the full analysis lifecycle: cohort definition, statistical method selection, confounder adjustment, and inference. Communicated results to scientific stakeholders and presented to leadership.
+      \item Accepted for poster presentation at ICFSR 2026 (Washington, DC).
+  \end{itemize} 
+  \item \textbf{2026:} 
+  \begin{itemize}
+  \item Conducted an individual participant data (IPD) meta-analysis of 14 clinical trials using both two-stage and one-stage (mixed-effects) approaches, and explored mixture models to capture heterogeneity in intervention effects on key health outcomes. 
+  \item Communicated results to scientific stakeholders and presented to leadership.
+  \end{itemize}
 \end{itemize}
 }}
 \vspace{0.1cm}
 \Needspace*{5\baselineskip}{\customcventry{Aug 2019 - Jul 2021}{Statistical Programmer}{Novartis Healthcare Pvt.\ Ltd.}{Hyderabad, India}{}
 {\begin{itemize}
   \item Programmed SDTM and ADaM datasets and tables, listings, and figures (TFLs) in SAS and R to CDISC standards for three clinical trials, including the pivotal Phase III study of Kisqali (ribociclib) in breast cancer.
+  \item Provided statistical programming support for early-phase studies with the Novartis Institutes for BioMedical Research (NIBR)
   \item Implemented the statistical methods specified in statistical analysis plans (SAPs), working with trial statisticians on analysis specifications and outputs.
   \item Performed independent double programming and quality-control validation of datasets and outputs to ensure accuracy and submission readiness.
   \item Built reporting databases supporting regulatory submissions across solid-tumor oncology and respiratory therapeutic areas.
@@ -244,6 +257,8 @@
 \item Student seminar talks (4), Department of Statistics, The Ohio State University
 \vskip 0.1cm
 \item Research presentations at collaborating laboratories (multiple)
+\vskip 0.1cm
+\item Training talk on graph neural networks (GNNs), Biomedical Informatics Shared Resource (BISR), The Ohio State University Comprehensive Cancer Center, James (2025)
 \end{itemize}
 
 \Needspace*{7\baselineskip}
@@ -271,7 +286,7 @@ American Statistical Association (ASA); Eastern North American Region of the Int
 \begin{itemize}
 \vskip 0.1cm
 \Needspace*{3\baselineskip}\item \textbf{Immuno-Oncology Informatics Group (IOIG), Pelotonia Institute} (2024 - 2025)\\
-Contributed to the institute's immuno-oncology research services through data analysis, statistical consultation, and training; presented project updates at monthly group meetings.
+Contributed to the institute's immuno-oncology research services through data analysis, statistical consultation, and training. Presented project updates at monthly group meetings.
 \vskip 0.1cm
 \Needspace*{2\baselineskip}\item \textbf{Chung Research Group, The Ohio State University}\\
 Regularly presented at lab meetings, giving detailed updates on research progress, reviewing relevant literature, and leading discussions among lab members.
@@ -282,11 +297,11 @@ Regularly presented at lab meetings, giving detailed updates on research progres
 \begin{itemize}
 \Needspace*{3\baselineskip}\item \textbf{Student Representative, Columbus Chapter, American Statistical Association (ASA)} (2026 - 2027)
 \Needspace*{3\baselineskip}\item \textbf{President, Statistics \& Biostatistics Graduate Student Association, The Ohio State University} (Aug 2024 - Aug 2025)\\
-Led a 100+ member organization; liaised between graduate students and department administration.
+Led a 100+ member organization. Liaised between graduate students and department administration.
 \Needspace*{3\baselineskip}\item \textbf{Officer, Public Health Graduate Student Association (PHGSA), The Ohio State University} (Aug 2022 - Aug 2023)\\
 Served as an officer of the graduate student association for the College of Public Health.
 \Needspace*{3\baselineskip}\item \textbf{Placement Coordinator, Department of Statistics, University of Delhi} (Jan 2018 - Jun 2019)\\
-Coordinated full-time placements for 70+ students and internships for 70+ students; invited, hosted, and communicated with recruiting companies, and helped train students for the recruitment process.
+Coordinated full-time placements for 70+ students and internships for 70+ students. Invited, hosted, and communicated with recruiting companies, and helped train students for the recruitment process.
 \vskip 0.1cm
 \Needspace*{3\baselineskip}\item \textbf{Judge, Statistical Analysis Award, State Science Day, Ohio Academy of Science} (2026)\\
 Evaluated student science-fair projects for the award sponsored by the Department of Statistics, The Ohio State University.
@@ -326,10 +341,10 @@ Led the evaluation of applications for FRAME (Fellowship for Research, Academic 
 \begin{itemize}
 \vskip 0.1cm
 \Needspace*{3\baselineskip}\item \textbf{Graduate admissions mentoring} (2022 - Present)\\
-Mentored six students through the PhD admissions process and advised others applying to graduate programs; currently mentoring a Denison University student applying to PhD programs.
+Mentored six students through the PhD admissions process and advised others applying to graduate programs. Currently mentoring a student from Denison University applying to PhD programs.
 \vskip 0.1cm
 \Needspace*{3\baselineskip}\item \textbf{Statistical mentoring for graduate researchers}\\
-Guided three graduate students in dentistry, epidemiology, and computational linguistics on statistical concepts and on designing and carrying out the analyses for their research, including an MDS candidate in oral and maxillofacial surgery through her thesis defense.
+Guided 3 graduate researchers on statistical concepts and on designing and carrying out the analyses for their research: an MDS candidate in oral and maxillofacial surgery (through her thesis defense), and PhD students in epidemiology and computational linguistics.
 \vskip 0.1cm
 \Needspace*{3\baselineskip}\item \textbf{Mentor, DecodingCOVID Virtual Hackathon, South Asian Medical Students' Association} (2020)
 \end{itemize}
@@ -346,7 +361,7 @@ Guided three graduate students in dentistry, epidemiology, and computational lin
 \section{SKILLS}
 \begin{itemize}
    \item \textbf{Clinical \& Regulatory:} CDISC (SDTM, ADaM, TFL), Phase I-III trial programming, survival analysis, causal inference, mixed models
-   \item \textbf{Omics \& Genomics:} Seurat, DESeq2, Cell Ranger (10x Genomics), PLINK (GWAS), spatial transcriptomics, TCR-seq, DNA methylation
+   \item \textbf{Omics \& Genomics:} Seurat, DESeq2, Cell Ranger (10x Genomics), PLINK (GWAS), SingleR, UCell, ScType, spatial transcriptomics, TCR-seq, DNA methylation
    \item \textbf{Statistics \& Machine Learning:} Bayesian inference, MCMC, FDR control, deep learning, feature selection, Gaussian mixture models
    \item \textbf{Programming \& Software:} R (Shiny, R Markdown, Quarto), SAS, LaTeX, VS Code; also C, C++, Stata, SPSS, SQL
 \end{itemize}
