@@ -1,10 +1,10 @@
 {
   "basics": {
     "name": "Arkobrato Gupta",
-    "email": "arko.work25@gmail.com",
+    "email": "gupta.1161@osu.edu",
     "phone": "+1-616-227-8780",
     "website": "https://arkobrato.github.io",
-    "summary": "PhD candidate in Biostatistics at The Ohio State University (exp. May 2027) with industry experience at Novartis and Abbott, spanning clinical-trial design and analysis, statistical analysis plans, regulatory submissions, and real-world evidence. Skilled in Bayesian methods, causal inference, biomarker/genetic analysis, and machine learning; proficient in R and SAS. 8 peer-reviewed papers, including Scientific Reports (Nature Portfolio).",
+    "summary": "PhD candidate in Biostatistics at The Ohio State University (GPA: 3.88/4.0; advisor: Dr. Dongjun Chung), with industry experience at Novartis and Abbott spanning clinical-trial design and analysis, statistical analysis plans, regulatory submissions, and real-world evidence. Skilled in Bayesian methods, causal inference, biomarker/genetic analysis, and machine learning; proficient in R and SAS. 6 peer-reviewed papers (including Scientific Reports, American Journal of Psychiatry, Molecular Psychiatry) and 4 preprints.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -44,25 +44,27 @@
       "endDate": "2026-08-31",
       "summary": "Columbus, OH",
       "highlights": [
-        "Analyzed a propensity-matched NHANES cohort (n = 6,508; 2011-2018): adults consuming ≥1.2 g/kg/day protein had 1.2% greater lean soft tissue (p < 0.001), independent of physical activity, supporting protein guidelines for healthy aging",
-        "Owned the full analysis lifecycle: cohort definition, statistical method selection, confounder adjustment, and inference; communicated results to scientific stakeholders and presented to leadership",
+        "Analyzed a propensity-matched NHANES cohort (n = 6,508; 2011-2018): adults consuming ≥1.2 g/kg/day protein had 1.2% greater lean soft tissue (p < 0.001), independent of physical activity, supporting protein guidelines for healthy aging. Owned the full analysis lifecycle: cohort definition, statistical method selection, confounder adjustment, and inference",
         "Accepted for poster presentation at ICFSR 2026 (Washington, DC)",
-        "Completed and presented an individual participant data (IPD) meta-analysis across 14 clinical trials evaluating intervention effects on key health outcomes"
+        "Conducted an individual participant data (IPD) meta-analysis of 14 clinical trials using both two-stage and one-stage (mixed-effects) approaches, and explored mixture models to capture heterogeneity in intervention effects on key health outcomes"
       ]
     },
     {
-      "company": "The Ohio State University, Comprehensive Cancer Center",
+      "company": "The Ohio State University Comprehensive Cancer Center",
       "position": "Graduate Research Associate",
       "website": "",
       "startDate": "2022-05-01",
-      "endDate": "",
+      "endDate": "2026-05-31",
       "summary": "Columbus, OH • Pelotonia Institute for Immuno-Oncology",
       "highlights": [
-        "Developed SRT, a statistical framework integrating spatial TCR-seq and transcriptomics (earth-mover's distance + Gaussian-mixture FDR) that identified 878 genes coupled with T-cell diversity in glioblastoma, a biomarker-discovery method for the tumor microenvironment",
-        "Developed a Bayesian stochastic block model framework to identify behavioral subgroups in a 900+ subject opioid use disorder study; linked subgroups to brain-region gene expression, with ongoing extension to multivariate phenotype-expression association",
-        "Built SCOPE, an R Shiny app implementing the Bayesian stochastic block model clustering framework (modularity-initialized Gibbs sampling with posterior uncertainty quantification), adopted by 5+ labs across the USA and international partners (Italy, UK)",
-        "Engineered a deep learning + feature selection pipeline on 60,000-feature TCGA-BRCA RNA-seq data to identify breast cancer biomarkers across multiple populations",
-        "Co-led a genome-wide EWAS (Illumina EPIC; 802,978 CpGs; n = 324 postmenopausal women) identifying 736 differentially methylated loci between Native Hawaiian and White women; linked to liver disease pathways (61% of genes), DASH diet adherence, and adiponectin; published co-first author in Scientific Reports, 2025"
+        "SRT: statistical framework integrating spatial TCR-seq and spatial transcriptomics (earth-mover's distance + Gaussian-mixture FDR control); identified 878 genes coupled with T-cell clonal diversity in glioblastoma, enabling biomarker discovery in the tumor microenvironment",
+        "Opioid use disorder: developed a Bayesian stochastic block model clustering framework for 900+ genetically diverse rats, classifying vulnerable/intermediate/resilient phenotypes and revealing sex-specific subgroups within the vulnerable phenotype",
+        "SCOPE: R Shiny app implementing the Bayesian stochastic block model clustering framework (modularity-initialized Gibbs sampling with posterior uncertainty quantification), adopted by 5+ labs in the USA, Italy, and the UK",
+        "graph-GPA 2.0 (co-first author; Frontiers in Genetics, 2023): Bayesian graphical model integrating GWAS summary statistics across multiple diseases with functional annotation data",
+        "Co-led a genome-wide EWAS (co-first author; Scientific Reports, 2025) identifying 736 differentially methylated loci between Native Hawaiian and White women",
+        "Estimated epigenetic age and age acceleration from EPIC methylation data in advanced NSCLC (Beating Lung Cancer in Ohio study, 2025)",
+        "Statistical analyses of clinical, histopathologic, and gene expression data from 75 dogs with soft tissue sarcoma (Cancers, 2025), a comparative oncology model for human disease",
+        "Analyzed public glioblastoma scRNA-seq data (100,000+ cells) to annotate myeloid populations and profile immune checkpoint ligand expression, supporting a grant application (2025)"
       ]
     },
     {
@@ -73,7 +75,10 @@
       "endDate": "2021-07-31",
       "summary": "Hyderabad, India",
       "highlights": [
-        "Selected and implemented statistical methods under study analysis plans (SAPs), delivering CDISC-compliant SAS/R programming (SDTM, ADaM, TFL) across three clinical trials, including the pivotal Phase III study for Kisqali (ribociclib)",
+        "Programmed SDTM and ADaM datasets and TFLs in SAS and R to CDISC standards for three clinical trials, including the pivotal Phase III study of Kisqali (ribociclib) in breast cancer",
+        "Provided statistical programming support for early-phase studies with the Novartis Institutes for BioMedical Research (NIBR)",
+        "Implemented statistical methods specified in SAPs, working with trial statisticians on analysis specifications and outputs",
+        "Performed independent double programming and QC validation of datasets and outputs for submission readiness",
         "Built reporting databases supporting regulatory submissions across solid-tumor oncology and respiratory therapeutic areas"
       ]
     },
@@ -85,7 +90,7 @@
       "endDate": "2022-05-31",
       "summary": "College of Public Health",
       "highlights": [
-        "Led R and SAS lab sections and a causal inference course for graduate and undergraduate students"
+        "Led sections for PUBHBIO 2210 (Biostatistics for Public Health Research, undergraduate) and PUBHBIO 6270 (Introduction to SAS for Public Health Students, graduate)"
       ]
     },
     {
@@ -100,7 +105,7 @@
       ]
     },
     {
-      "company": "National Sample Survey Office (NSSO), Ministry of Statistics, Govt. of India",
+      "company": "National Sample Survey Office (NSSO), Govt. of India",
       "position": "Research Intern",
       "website": "",
       "startDate": "2018-06-01",
@@ -114,18 +119,18 @@
   "education": [
     {
       "institution": "The Ohio State University",
-      "area": "PhD in Biostatistics",
+      "area": "PhD in Biostatistics (GPA: 3.88/4.0; advisor: Dr. Dongjun Chung; dissertation: Statistical Frameworks for Integrating Multi-Omics & Multi-modal Data)",
       "studyType": "PhD",
       "startDate": "2021-08-01",
-      "endDate": "2027-05-31",
-      "gpa": null,
+      "endDate": "2027-08-31",
+      "gpa": "3.88/4.0",
       "courses": [
         "Advanced Survival Analysis",
         "Statistical Genetics",
         "Causal Inference",
         "Bayesian Inference",
         "MCMC",
-        "Bioinformatics & ML in Omics"
+        "Bioinformatics & Machine Learning in Omics"
       ]
     },
     {
@@ -133,7 +138,7 @@
       "area": "MS in Statistics",
       "studyType": "MS",
       "startDate": "2021-08-01",
-      "endDate": "2027-05-31",
+      "endDate": "2025-12-31",
       "gpa": null,
       "courses": []
     },
@@ -147,7 +152,7 @@
       "courses": []
     },
     {
-      "institution": "St. Xavier's College, Calcutta University",
+      "institution": "St. Xavier's College, University of Calcutta",
       "area": "BS (Hons.) in Statistics",
       "studyType": "BS",
       "startDate": "2014-07-01",
@@ -163,101 +168,141 @@
     },
     {
       "name": "Omics & Genomics",
-      "keywords": ["Seurat", "DESeq2", "Cell Ranger (10x Genomics)", "PLINK (GWAS)", "spatial transcriptomics", "TCR-seq", "DNA methylation"]
+      "keywords": ["Seurat", "DESeq2", "Cell Ranger & Space Ranger (10x Genomics)", "PLINK (GWAS)", "SingleR", "UCell", "ScType", "spatial transcriptomics", "TCR-seq", "DNA methylation"]
     },
     {
-      "name": "Statistics & ML",
+      "name": "Statistics & Machine Learning",
       "keywords": ["Bayesian inference", "MCMC", "FDR control", "deep learning", "feature selection", "Gaussian mixture models"]
     },
     {
-      "name": "Software",
-      "keywords": ["R (Shiny, R Markdown, Quarto)", "LaTeX", "SAS", "VS Code", "C", "C++", "Stata", "SPSS", "SQL"]
+      "name": "Programming & Software",
+      "keywords": ["R (Shiny, R Markdown, Quarto)", "SAS", "LaTeX", "VS Code", "C", "C++", "Stata", "SPSS", "SQL"]
     }
   ],
   "languages": [],
   "interests": [],
-  "references": [],
+  "references": [
+    {
+      "name": "Dongjun Chung, PhD",
+      "reference": "Professor, Department of Biomedical Informatics, College of Medicine, The Ohio State University, Columbus, OH. Dongjun.Chung@osumc.edu"
+    }
+  ],
   "publications": [
     {
-      "name": "Differential blood DNA methylation loci between Native Hawaiian and White women",
-      "publisher": "Scientific Reports (Nature Portfolio)",
+      "name": "Differential blood DNA methylation loci between Native Hawaiian and White women are associated with dietary patterns and metabolic biomarkers",
+      "publisher": "Scientific Reports",
       "releaseDate": "2025-01-01",
       "website": "https://doi.org/10.1038/s41598-025-25253-4",
-      "summary": "Song M-A, Gupta A, et al. Co-first author. Genome-wide EWAS (Illumina EPIC; 802,978 CpGs; n = 324 postmenopausal women) identifying 736 differentially methylated loci between Native Hawaiian and White women."
+      "summary": "Song M-A*, Gupta A*, et al. (2025). Co-first author. Genome-wide EWAS (Illumina EPIC; 802,978 CpGs; n = 324 postmenopausal women) identifying 736 differentially methylated loci between Native Hawaiian and White women."
     },
     {
-      "name": "graph-GPA 2.0: improving multi-disease genetic analysis",
-      "publisher": "Frontiers in Genetics",
-      "releaseDate": "2023-01-01",
-      "website": "https://doi.org/10.3389/fgene.2023.1079198",
-      "summary": "Deng Q, Gupta A, et al."
+      "name": "Genome-wide association study reveals multiple loci for nociception and opioid consumption behaviors associated with heroin vulnerability in outbred rats",
+      "publisher": "Molecular Psychiatry",
+      "releaseDate": "2025-08-01",
+      "website": "https://doi.org/10.1038/s41380-025-02922-4",
+      "summary": "Kuhn BN, Cannella N, Chitre AS, et al. (incl. Gupta A), Chung D, et al. & Palmer AA. (2025)."
     },
     {
       "name": "Distinct Behavioral Profiles and Neuronal Correlates of Heroin Vulnerability Versus Resiliency in a Multi-Symptomatic Model of Heroin Use Disorder in Rats",
       "publisher": "American Journal of Psychiatry",
-      "releaseDate": "2025-01-01",
+      "releaseDate": "2025-02-01",
       "website": "https://doi.org/10.1176/appi.ajp.20230623",
-      "summary": "Kuhn BN, et al. (incl. Gupta A)."
+      "summary": "Kuhn BN, et al. (incl. Gupta A). (2025)."
     },
     {
       "name": "The Immune Landscape of Canine Soft Tissue Sarcomas as a Model for Human Soft Tissue Sarcomas",
       "publisher": "Cancers",
-      "releaseDate": "2025-01-01",
+      "releaseDate": "2025-03-01",
       "website": "https://doi.org/10.3390/cancers17233860",
-      "summary": "Hayburn R, Chung D, Gupta A, et al."
+      "summary": "Hayburn R, Chung D, Gupta A, et al. (2025)."
+    },
+    {
+      "name": "graph-GPA 2.0: improving multi-disease genetic analysis with integration of functional annotation data",
+      "publisher": "Frontiers in Genetics",
+      "releaseDate": "2023-01-01",
+      "website": "https://doi.org/10.3389/fgene.2023.1079198",
+      "summary": "Deng Q*, Gupta A*, Jeon H*, et al. (2023). Co-first author."
     },
     {
       "name": "Statistical Power Analysis for Designing Bulk, Single-Cell, and Spatial Transcriptomics Experiments: Review, Tutorial, and Perspectives",
       "publisher": "Biomolecules",
-      "releaseDate": "2023-01-01",
+      "releaseDate": "2023-02-01",
       "website": "https://doi.org/10.3390/biom13020221",
-      "summary": "Jeon H, et al. (incl. Gupta A). Plus 3 additional peer-reviewed publications."
+      "summary": "Jeon H, et al. (incl. Gupta A). (2023)."
     }
   ],
   "presentations": [
     {
-      "name": "Dissertation talk on SRT",
-      "event": "Joint Statistical Meeting (JSM)",
+      "name": "SRT: A Statistical Framework for the Integrative Analysis of Spatial TCR-seq & Spatial Transcriptomics Data",
+      "event": "Joint Statistical Meetings (JSM) 2026",
       "date": "2026-08-01",
       "location": "",
-      "description": ""
+      "description": "Oral presentation"
     },
     {
-      "name": "Dissertation talk on SRT",
-      "event": "ENAR",
+      "name": "SRT: A Statistical Framework for the Integrative Analysis of Spatial TCR-seq & Spatial Transcriptomics Data",
+      "event": "ENAR Spring Meeting 2026",
       "date": "2026-03-01",
       "location": "",
-      "description": ""
+      "description": "Oral presentation"
     },
     {
-      "name": "Poster on SRT",
-      "event": "Midwest Biopharmaceutical Statistics Workshop (MBSW)",
+      "name": "Protein intake and lean soft tissue in a propensity-matched NHANES cohort",
+      "event": "International Conference on Frailty & Sarcopenia Research (ICFSR) 2026",
+      "date": "2026-04-01",
+      "location": "Washington, DC, USA",
+      "description": "Poster (presented by a co-author)"
+    },
+    {
+      "name": "SRT: A Statistical Framework for the Integrative Analysis of Spatial TCR-seq & Spatial Transcriptomics Data",
+      "event": "Midwest Biopharmaceutical Statistics Workshop (MBSW) 2026",
       "date": "2026-05-01",
       "location": "",
-      "description": ""
+      "description": "Poster"
     },
     {
-      "name": "Poster on graph-GPA 2.0",
-      "event": "ICSA Midwest Chapter & NIC-ASA Joint Fall Meeting",
+      "name": "SRT: A Statistical Framework for the Integrative Analysis of Spatial TCR-seq & Spatial Transcriptomics Data",
+      "event": "Annual Joint Biostatistics Symposium 2026",
+      "date": "2026-06-01",
+      "location": "Columbus, OH, USA",
+      "description": "Poster"
+    },
+    {
+      "name": "Multi-disease genetic analysis with integration of functional annotation data",
+      "event": "ICSA Midwest Chapter & NIC-ASA Joint Fall Meeting 2023",
       "date": "2023-10-01",
       "location": "",
-      "description": ""
+      "description": "Poster"
     },
     {
-      "name": "Poster on SRT and graph-GPA 2.0",
-      "event": "Annual Joint Biostatistics Symposium",
-      "date": "2023-01-01",
-      "location": "",
-      "description": ""
+      "name": "Multi-disease genetic analysis with integration of functional annotation data",
+      "event": "Annual Joint Biostatistics Symposium 2023",
+      "date": "2023-06-01",
+      "location": "Columbus, OH, USA",
+      "description": "Poster"
     }
   ],
   "teaching": [
     {
-      "course": "R and SAS lab sections; causal inference course",
+      "course": "PUBHBIO 2210: Biostatistics for Public Health Research (undergraduate)",
+      "institution": "The Ohio State University, Division of Biostatistics",
+      "date": "2026-08-01",
+      "role": "Instructor",
+      "description": "Teaching two sections (50 students in total)"
+    },
+    {
+      "course": "PUBHBIO 7255: Introduction to Causal Inference (graduate)",
+      "institution": "The Ohio State University, Division of Biostatistics",
+      "date": "2026-08-02",
+      "role": "Graduate Teaching Associate",
+      "description": ""
+    },
+    {
+      "course": "PUBHBIO 2210 & PUBHBIO 6270 (Intro to SAS for Public Health Students)",
       "institution": "The Ohio State University, Division of Biostatistics",
       "date": "2021-08-01",
       "role": "Graduate Teaching Associate",
-      "description": "Led lab sections for graduate and undergraduate students"
+      "description": ""
     }
   ],
   "portfolio": []
