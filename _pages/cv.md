@@ -9,6 +9,16 @@ redirect_from:
 
 {% include base_path %}
 
+<style>
+  .role-list { padding-left: 1.75em; }
+  .role-list-item { margin-bottom: 2em; }
+  .role-list-item__header { font-size: 1.1em; }
+  .role-list-item__duration { color: #767676; margin-bottom: 0.5em; }
+  .role-list-item__body { margin-top: 0.5em; }
+  .role-list-item__body ul { margin-top: 0.3em; padding-left: 1.5em; }
+  .role-list-item__body p { margin: 0.4em 0; }
+</style>
+
 [Download a copy of my CV (.pdf)]({{ base_path }}/files/Arkobrato_Gupta_Vitae.pdf)
 
 Education
@@ -26,20 +36,23 @@ Education
 
 Research Experience
 ======
-[See full details on the Experience page →](/experience/)
-  <ul>{% for post in site.experience reversed %}
-    {% if post.category == "research" %}
-    {% include archive-single-role-cv.html %}
-    {% endif %}
-  {% endfor %}</ul>
+<ol class="role-list">
+{% for post in site.experience reversed %}
+  {% if post.category == "research" %}
+    {% include role-list-item.html full=true %}
+  {% endif %}
+{% endfor %}
+</ol>
 
 Industry Experience
 ======
-  <ul>{% for post in site.experience reversed %}
-    {% if post.category == "industry" %}
-    {% include archive-single-role-cv.html %}
-    {% endif %}
-  {% endfor %}</ul>
+<ol class="role-list">
+{% for post in site.experience reversed %}
+  {% if post.category == "industry" %}
+    {% include role-list-item.html full=true %}
+  {% endif %}
+{% endfor %}
+</ol>
 
 Skills
 ======
@@ -104,10 +117,11 @@ Research Group Activities
 
 Leadership & Service
 ======
-[See full details on the Leadership page →](/leadership/)
-  <ul>{% for post in site.leadership reversed %}
-    {% include archive-single-role-cv.html %}
-  {% endfor %}</ul>
+<ol class="role-list">
+{% for post in site.leadership reversed %}
+  {% include role-list-item.html full=true %}
+{% endfor %}
+</ol>
 
 Mentoring
 ======

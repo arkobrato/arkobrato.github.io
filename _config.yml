@@ -236,11 +236,9 @@ collections:
     output: true
     permalink: /:collection/:path/
   experience:
-    output: true
-    permalink: /:collection/:path/
+    output: false
   leadership:
-    output: true
-    permalink: /:collection/:path/
+    output: false
 
 
 # These settings control how pages and collections are included in the site

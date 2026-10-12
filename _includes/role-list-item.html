@@ -1,0 +1,17 @@
+<li class="role-list-item">
+  <div class="role-list-item__header">
+    <strong>{{ post.title }}</strong> —
+    {% if post.link %}
+      <a href="{{ post.link }}" target="_blank" rel="noopener">{{ post.venue }}</a>
+    {% else %}
+      {{ post.venue }}
+    {% endif %}
+    {% if post.location %}, {{ post.location }}{% endif %}
+  </div>
+  <div class="role-list-item__duration"><em>{{ post.duration }}</em></div>
+  {% if include.full %}
+    <div class="role-list-item__body">
+      {{ post.content }}
+    </div>
+  {% endif %}
+</li>
