@@ -1,0 +1,22 @@
+---
+layout: archive
+title: "Experience"
+permalink: /experience/
+author_profile: true
+---
+
+{% include base_path %}
+
+<h2>Research Experience</h2>
+{% for post in site.experience reversed %}
+  {% if post.category == "research" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+<h2>Industry Experience</h2>
+{% for post in site.experience reversed %}
+  {% if post.category == "industry" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
