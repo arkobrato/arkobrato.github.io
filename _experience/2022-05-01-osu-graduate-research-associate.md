@@ -2,14 +2,13 @@
 title: "Graduate Research Associate"
 collection: experience
 category: research
-type: "Graduate Research Associate"
-permalink: /experience/2022-05-01-osu-graduate-research-associate
-excerpt: 'Dissertation and collaborative research in statistical genomics and immuno-oncology at the OSU Comprehensive Cancer Center.'
 date: 2022-05-01
+duration: "May 2022 - May 2026"
 venue: "The Ohio State University Comprehensive Cancer Center"
+link: "https://cancer.osu.edu"
 location: "Columbus, OH, USA"
 ---
-Pelotonia Institute for Immuno-Oncology, May 2022 - May 2026
+Pelotonia Institute for Immuno-Oncology
 
 **Dissertation research**
 * **SRT**: statistical framework for integrating spatial TCR-seq and spatial transcriptomics — combines earth-mover's distance with Gaussian-mixture FDR control; identified 878 genes coupled with T-cell clonal diversity in glioblastoma, enabling biomarker discovery in the tumor microenvironment

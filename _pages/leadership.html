@@ -7,6 +7,17 @@ author_profile: true
 
 {% include base_path %}
 
+<style>
+  .role-list { padding-left: 1.75em; }
+  .role-list-item { margin-bottom: 2em; }
+  .role-list-item__header { font-size: 1.1em; }
+  .role-list-item__duration { color: #767676; margin-bottom: 0.5em; }
+  .role-list-item__body { margin-top: 0.5em; }
+  .role-list-item__body p { margin: 0.4em 0; }
+</style>
+
+<ol class="role-list">
 {% for post in site.leadership reversed %}
-  {% include archive-single.html %}
+  {% include role-list-item.html full=true %}
 {% endfor %}
+</ol>
