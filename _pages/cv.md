@@ -151,7 +151,4 @@ Volunteer Work
 
 References
 ======
-**Dongjun Chung, PhD**
-Professor, Department of Biomedical Informatics, College of Medicine
-The Ohio State University, Columbus, OH
-Dongjun.Chung@osumc.edu
+Available upon request.
