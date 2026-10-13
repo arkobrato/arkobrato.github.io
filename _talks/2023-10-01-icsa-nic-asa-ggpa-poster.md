@@ -2,7 +2,6 @@
 title: "Multi-disease genetic analysis with integration of functional annotation data"
 collection: talks
 type: "Poster"
-permalink: /talks/2023-10-01-icsa-nic-asa-ggpa-poster
 venue: "ICSA Midwest Chapter & NIC-ASA Joint Fall Meeting 2023"
 date: 2023-10-01
 location: "USA"

@@ -2,7 +2,6 @@
 title: "Multi-disease genetic analysis with integration of functional annotation data"
 collection: talks
 type: "Poster"
-permalink: /talks/2023-06-01-biostat-symposium-poster
 venue: "Annual Joint Biostatistics Symposium 2023"
 date: 2023-06-01
 location: "Columbus, OH, USA"

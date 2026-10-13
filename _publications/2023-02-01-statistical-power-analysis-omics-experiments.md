@@ -9,4 +9,8 @@ venue: 'Biomolecules'
 paperurl: 'https://doi.org/10.3390/biom13020221'
 citation: 'Jeon, H., Xie, J., Jeon, Y., Jung, K. J., Gupta, A., Chang, W., &amp; Chung, D. (2023). &quot;Statistical power analysis for designing bulk, single-cell, and spatial transcriptomics experiments: review, tutorial, and perspectives.&quot; <i>Biomolecules</i>, 13(2), 221.'
 ---
-Review, tutorial, and perspectives on statistical power analysis for designing bulk, single-cell, and spatial transcriptomics experiments.
+Transcriptomics experiments now span a range of technologies, from traditional bulk RNA-seq to single-cell and spatial transcriptomics, each with different cost structures, sources of variability, and analytical considerations. Underpowered studies risk missing true biological signal, while overpowered ones waste resources, making principled power analysis an important but often overlooked step in experimental design.
+
+This paper reviews statistical power analysis approaches across bulk, single-cell, and spatial transcriptomics experiments, walking through the key factors that affect power in each setting (e.g., sequencing depth, number of cells or spatial spots, biological and technical replication) and providing practical guidance and tutorials for researchers planning these experiments.
+
+*I contributed to the review and tutorial content on power analysis for these experimental designs.*

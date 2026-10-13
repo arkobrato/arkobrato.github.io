@@ -1,10 +1,11 @@
 ---
-title: "PUBHBIO 2210: Biostatistics for Public Health Research (undergraduate)"
+title: "PUBHBIO 2210: Biostatistics for Public Health Research"
 collection: teaching
-type: "Instructor"
-permalink: /teaching/2026-08-01-instructor-pubhbio2210
-venue: "The Ohio State University, Division of Biostatistics, College of Public Health"
+role: "Instructor"
+level: "Undergraduate"
+term: "Fall 2026 - Present"
 date: 2026-08-01
+venue: "The Ohio State University, Division of Biostatistics, College of Public Health"
 location: "Columbus, OH, USA"
 ---
-Instructor for PUBHBIO 2210 (Biostatistics for Public Health Research, undergraduate), teaching two sections (50 students in total).
+Teaching two sections (50 students in total).

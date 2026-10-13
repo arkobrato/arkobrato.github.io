@@ -6,7 +6,24 @@ author_profile: true
 ---
 
 {% include base_path %}
+{% include numbered-list-style.html %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+{% assign roles = "Instructor,Graduate Teaching Associate" | split: "," %}
+{% for role in roles %}
+  {% assign role_items = site.teaching | where: "role", role %}
+  {% if role_items.size > 0 %}
+    <h2>{{ role }}</h2>
+    {% assign levels = "Graduate,Undergraduate" | split: "," %}
+    {% for level in levels %}
+      {% assign level_items = role_items | where: "level", level | sort: "date" %}
+      {% if level_items.size > 0 %}
+        <h3 class="role-group-heading">{{ level }}</h3>
+        <ol class="role-list">
+        {% for post in level_items %}
+          {% include teaching-list-item.html %}
+        {% endfor %}
+        </ol>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
 {% endfor %}
