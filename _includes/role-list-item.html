@@ -1,3 +1,5 @@
+{% include base_path %}
+
 <li class="role-list-item">
   <div class="role-list-item__header">
     <strong>{{ post.title }}</strong> —
@@ -11,7 +13,34 @@
   <div class="role-list-item__duration"><em>{{ post.duration }}</em></div>
   {% if include.full %}
     <div class="role-list-item__body">
-      {{ post.content }}
+      {% if post.projects %}
+        {% if post.content != empty %}{{ post.content }}{% endif %}
+        {% assign last_group = "" %}
+        {% for project in post.projects %}
+          {% if project.group != last_group %}
+            <p><strong>{{ project.group }}</strong></p>
+            <ul class="role-sublist">
+            {% assign last_group = project.group %}
+          {% endif %}
+          <li>
+            <strong>{{ project.name }}</strong>: {{ project.description }}
+            {% if project.pub_tag %}
+              {% assign related_pubs = site.publications | where: "project", project.pub_tag %}
+              {% if related_pubs.size > 0 %}
+                <a class="pub-badge" href="{{ base_path }}/publications/by-project/#{{ project.pub_tag }}">{{ related_pubs.size }} publication{% if related_pubs.size > 1 %}s{% endif %}</a>
+              {% endif %}
+            {% endif %}
+          </li>
+          {% unless forloop.last %}
+            {% assign next_group = post.projects[forloop.index].group %}
+            {% if next_group != project.group %}</ul>{% endif %}
+          {% else %}
+            </ul>
+          {% endunless %}
+        {% endfor %}
+      {% else %}
+        {{ post.content }}
+      {% endif %}
     </div>
   {% endif %}
 </li>

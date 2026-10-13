@@ -1,0 +1,28 @@
+---
+layout: archive
+title: "Publications by Project"
+permalink: /publications/by-project/
+author_profile: true
+---
+
+{% include base_path %}
+{% include numbered-list-style.html %}
+
+<p><a href="{{ base_path }}/publications/">&larr; Back to full publications list</a></p>
+
+{% assign projects = "graph-gpa|graph-GPA 2.0,dna-methylation|DNA Methylation (Native Hawaiian Health Disparities),comparative-oncology|Comparative Oncology (Canine Soft Tissue Sarcoma),opioid-use-disorder|Opioid Use Disorder" | split: "," %}
+
+{% for project in projects %}
+  {% assign parts = project | split: "|" %}
+  {% assign tag = parts[0] %}
+  {% assign label = parts[1] %}
+  {% assign items = site.publications | where: "project", tag %}
+  {% if items.size > 0 %}
+    <h2 id="{{ tag }}">{{ label }}</h2>
+    <ol class="role-list">
+    {% for post in items reversed %}
+      {% include archive-single-pub.html %}
+    {% endfor %}
+    </ol>
+  {% endif %}
+{% endfor %}

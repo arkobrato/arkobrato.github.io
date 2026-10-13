@@ -1,0 +1,16 @@
+{% include base_path %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<li class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <h3 class="archive__item-title" itemprop="headline">
+    <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+  </h3>
+  <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+  {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}
+  {% if post.paperurl %}<p><a href="{{ post.paperurl }}">Download Paper</a></p>{% endif %}
+</li>

@@ -1,0 +1,9 @@
+<li class="role-list-item">
+  <div class="role-list-item__header"><strong>{{ post.title }}</strong></div>
+  <div class="role-list-item__duration"><em>{{ post.term }}</em></div>
+  {% if post.content != empty %}
+    <div class="role-list-item__body">
+      {{ post.content }}
+    </div>
+  {% endif %}
+</li>
