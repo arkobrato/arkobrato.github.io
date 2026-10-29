@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SYPHT · Syphilis info for men</title>
+<meta name="description" content="Straight talk on syphilis for men in Central Ohio: signs, testing, one-shot treatment, and protecting your partner and family.">
+<meta name="theme-color" content="#13222B">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2313222B'/%3E%3Cpath d='M18 40l10-16 8 10 10-14' stroke='%23F0924D' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#13222B; --slate:#3A4750; --muted:#5A6670; --line:#DDE3E6; --soft:#F1F4F5;
+  --bg:#FFFFFF; --card:#FFFFFF; --accent:#F0924D; --accent-ink:#B4520F; --ok:#1F7A5A; --warn:#B4520F;
+  --radius:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+h1,h2,h3{font-family:Archivo,Inter,system-ui,sans-serif;line-height:1.1;margin:0 0 .5em}
+h2{font-size:clamp(1.6rem,4.5vw,2.2rem);font-weight:900;letter-spacing:-.01em}
+h3{font-size:1.15rem;font-weight:700}
+p{margin:0 0 1em}
+a{color:var(--accent-ink)}
+.wrap{max-width:960px;margin:0 auto;padding:0 16px}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+.eyebrow{font:700 .78rem/1 Archivo,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:12px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:rgba(19,34,43,.96);backdrop-filter:blur(8px);color:#fff}
+.nav .wrap{display:flex;align-items:center;gap:16px;height:56px}
+.logo{font:900 1.35rem/1 Archivo,sans-serif;letter-spacing:.04em;color:#fff;text-decoration:none;display:flex;align-items:center;gap:8px}
+.logo svg{flex:none}
+.nav ul{display:flex;gap:4px;list-style:none;margin:0 0 0 auto;padding:0;overflow-x:auto;scrollbar-width:none}
+.nav ul::-webkit-scrollbar{display:none}
+.nav a.l{color:#DDE3E6;text-decoration:none;font-size:.9rem;padding:8px 10px;border-radius:8px;white-space:nowrap}
+.nav a.l:hover{background:rgba(255,255,255,.08);color:#fff}
+@media (max-width:640px){.nav ul{display:none}}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;padding:56px 0 64px;border:0;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(240,146,77,.28),transparent 65%)}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-size:clamp(2.6rem,10vw,5rem);font-weight:900;letter-spacing:-.02em;margin-bottom:.25em}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.say{display:inline-block;font-size:.85rem;color:#C9D3D8;border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:4px 12px;margin-bottom:20px}
+.lede{font-size:clamp(1.1rem,3vw,1.3rem);color:#DDE3E6;max-width:36em}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 1rem/1 Archivo,sans-serif;padding:15px 20px;border-radius:12px;text-decoration:none;border:0;cursor:pointer}
+.btn.primary{background:var(--accent);color:var(--ink)}
+.btn.ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.35)}
+.btn.dark{background:var(--ink);color:#fff}
+.btn:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.slogans{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:40px}
+.slogans div{border-top:3px solid var(--accent);padding-top:10px;font:700 1.05rem/1.25 Archivo,sans-serif}
+@media (max-width:640px){.slogans{grid-template-columns:1fr}}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.stat{background:var(--soft);border-radius:var(--radius);padding:20px}
+.stat b{display:block;font:900 2.4rem/1 Archivo,sans-serif;color:var(--ink);margin-bottom:8px}
+.stat span{color:var(--slate);font-size:.95rem}
+@media (max-width:720px){.stats{grid-template-columns:1fr}}
+.src{font-size:.8rem;color:var(--muted);margin-top:12px}
+
+/* stages */
+.stages{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px;counter-reset:s}
+.stage{border:1px solid var(--line);border-radius:var(--radius);padding:18px;position:relative;background:var(--card)}
+.stage:before{counter-increment:s;content:counter(s);position:absolute;top:14px;right:16px;font:900 1.6rem/1 Archivo;color:var(--line)}
+.stage .when{font-size:.8rem;font-weight:600;color:var(--accent-ink);text-transform:uppercase;letter-spacing:.06em}
+.stage p{font-size:.95rem;margin:0;color:var(--slate)}
+@media (max-width:820px){.stages{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.stages{grid-template-columns:1fr}}
+.alert{margin-top:20px;background:#FFF4EC;border-left:4px solid var(--accent);border-radius:10px;padding:14px 16px;font-size:.95rem}
+
+/* self check */
+.check{background:var(--soft);border-radius:20px;padding:24px;margin-top:20px}
+.q{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.q:last-of-type{border-bottom:0}
+.q span{flex:1 1 260px}
+.yn{display:flex;gap:6px}
+.yn button{font:600 .95rem Inter,sans-serif;padding:9px 18px;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;min-width:64px}
+.yn button[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.result{margin-top:16px;padding:18px;border-radius:14px;background:#fff;border:1.5px solid var(--line);display:none}
+.result.show{display:block}
+.result h3{margin-bottom:.3em}
+
+/* cards */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+@media (max-width:760px){.grid2,.grid3{grid-template-columns:1fr}}
+.card{border:1px solid var(--line);border-radius:var(--radius);padding:20px;background:var(--card)}
+.card .ic{width:40px;height:40px;border-radius:10px;background:var(--ink);display:grid;place-items:center;margin-bottom:12px}
+.card p:last-child{margin-bottom:0}
+.card ul{margin:0;padding-left:1.1em}
+.card li{margin-bottom:.35em}
+.big{font:900 clamp(1.8rem,6vw,2.8rem)/1.05 Archivo,sans-serif;margin-bottom:12px}
+.big em{font-style:normal;color:var(--accent-ink)}
+
+/* where */
+.where{background:var(--ink);color:#fff;border:0}
+.where h2{color:#fff}
+.where .eyebrow{color:var(--accent)}
+.where .card{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.14);color:#fff}
+.where .card p,.where .card li{color:#DDE3E6}
+.where a{color:var(--accent)}
+.where .btn.primary{color:var(--ink)}
+
+/* faq */
+details{border-bottom:1px solid var(--line);padding:4px 0}
+summary{cursor:pointer;list-style:none;font:700 1.05rem/1.35 Archivo,sans-serif;padding:14px 32px 14px 0;position:relative}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:4px;top:10px;font-size:1.5rem;color:var(--accent-ink);transition:transform .2s}
+details[open] summary:after{transform:rotate(45deg)}
+details p{color:var(--slate);margin:0 0 14px}
+.tag{display:inline-block;font:700 .7rem/1 Archivo;letter-spacing:.08em;padding:4px 7px;border-radius:5px;margin-right:8px;vertical-align:2px}
+.tag.m{background:#FBE3D3;color:var(--accent-ink)}
+.tag.f{background:#D8EFE6;color:var(--ok)}
+
+footer{padding:40px 0 120px;color:var(--muted);font-size:.85rem}
+footer p{max-width:46em}
+
+/* chat */
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:40;display:flex;align-items:center;gap:10px;background:var(--accent);color:var(--ink);border:0;border-radius:999px;padding:14px 20px 14px 16px;font:700 1rem/1 Archivo,sans-serif;box-shadow:0 10px 30px rgba(19,34,43,.35);cursor:pointer}
+.fab[hidden]{display:none}
+.chat{position:fixed;right:16px;bottom:16px;z-index:50;width:min(400px,calc(100vw - 32px));height:min(620px,calc(100dvh - 32px));background:#fff;border-radius:20px;box-shadow:0 20px 60px rgba(19,34,43,.4);display:none;flex-direction:column;overflow:hidden}
+.chat.open{display:flex}
+@media (max-width:520px){.chat{right:0;bottom:0;width:100vw;height:100dvh;border-radius:0}}
+.chat header{background:var(--ink);color:#fff;padding:14px 16px;display:flex;align-items:center;gap:10px}
+.chat header b{font:900 1.05rem Archivo,sans-serif;display:block}
+.chat header small{color:#C9D3D8;font-size:.78rem}
+.chat header button{margin-left:auto;background:transparent;border:0;color:#fff;font-size:1.6rem;line-height:1;cursor:pointer;padding:4px 8px;border-radius:8px}
+.log{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px;background:var(--soft)}
+.msg{max-width:88%;padding:11px 14px;border-radius:16px;font-size:.95rem;line-height:1.45;white-space:pre-line}
+.msg.bot{background:#fff;border:1px solid var(--line);border-bottom-left-radius:4px;align-self:flex-start}
+.msg.me{background:var(--ink);color:#fff;border-bottom-right-radius:4px;align-self:flex-end}
+.msg a{color:var(--accent-ink);font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:6px;padding:10px 12px;border-top:1px solid var(--line);background:#fff}
+.chips button{font:500 .82rem Inter,sans-serif;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;padding:7px 11px;cursor:pointer}
+.chips button:hover{border-color:var(--ink)}
+.chat form{display:flex;gap:8px;padding:10px 12px calc(12px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line)}
+.chat input{flex:1;font:400 16px Inter,sans-serif;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;color:var(--ink);background:#fff}
+.chat input:focus{outline:none;border-color:var(--ink)}
+.chat form button{background:var(--ink);color:#fff;border:0;border-radius:12px;padding:0 16px;font:700 .95rem Archivo,sans-serif;cursor:pointer}
+.privacy{font-size:.72rem;color:var(--muted);text-align:center;padding:0 12px 8px;background:#fff}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="SYPHT home">
+      <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#F0924D"/><path d="M16 42l11-17 9 11 12-16" stroke="#13222B" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      SYPHT
+    </a>
+    <ul>
+      <li><a class="l" href="#signs">Signs</a></li>
+      <li><a class="l" href="#check">Should I test?</a></li>
+      <li><a class="l" href="#test">Testing</a></li>
+      <li><a class="l" href="#treat">Treatment</a></li>
+      <li><a class="l" href="#circle">Partners</a></li>
+      <li><a class="l" href="#where">Get tested</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="say">SYPHT · say it “shift”</div>
+    <h1>Syphilis doesn’t check <em>who you sleep with.</em></h1>
+    <p class="lede">Straight talk for men in Central Ohio. Syphilis is rising fast among men who have sex with women. It’s easy to miss, easy to test for, and easy to cure if you catch it early.</p>
+    <div class="cta">
+      <a class="btn primary" href="#where">Find a free or low-cost test</a>
+      <button class="btn ghost" type="button" data-open-chat>Ask a question privately</button>
+    </div>
+    <div class="slogans">
+      <div>Painless doesn’t mean harmless.</div>
+      <div>Catch it early. One shot. Done.</div>
+      <div>Check yourself. Protect your circle.</div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="why">
+  <div class="wrap">
+    <div class="eyebrow">The shift</div>
+    <h2>This isn’t somebody else’s problem anymore.</h2>
+    <p>For years, syphilis campaigns talked to gay and bisexual men. That still matters. But in Central Ohio the picture has shifted, and more straight men are getting it and passing it on without knowing.</p>
+    <div class="stats">
+      <div class="stat"><b>2×</b><span>Columbus’s syphilis rate compared with the U.S. as a whole (106 vs. 56 per 100,000 in 2024)</span></div>
+      <div class="stat"><b>1 in 3</b><span>Central Ohio cases are now in men who have sex with women, up from about 1 in 5 in 2021</span></div>
+      <div class="stat"><b>34</b><span>babies born with syphilis in Franklin County in a single year (2022)</span></div>
+    </div>
+    <p class="src">Sources: Columbus Public Health; Ohio Department of Health surveillance data (preliminary, 2025); CDC.</p>
+  </div>
+</section>
+
+<section id="signs">
+  <div class="wrap">
+    <div class="eyebrow">Know the signs</div>
+    <h2>Painless doesn’t mean harmless.</h2>
+    <p>Most guys miss it. The first sign usually doesn’t hurt, and it goes away on its own. But the infection doesn’t go away. It just goes quiet.</p>
+    <div class="stages">
+      <div class="stage"><div class="when">About 3 weeks after sex</div><h3>A sore</h3><p>A firm, round sore that usually <strong>doesn’t hurt</strong>. On the penis, anus, mouth or lips. Heals in 3 to 6 weeks, even with no treatment.</p></div>
+      <div class="stage"><div class="when">Weeks to months later</div><h3>A rash</h3><p>A rash that doesn’t itch, often on the <strong>palms of your hands or soles of your feet</strong>. Can come with fever, swollen glands, sore throat, patchy hair loss or feeling run-down.</p></div>
+      <div class="stage"><div class="when">Months to years</div><h3>Hidden</h3><p>No signs at all. You feel fine. But it’s still in your body, and in the first year you can still pass it on.</p></div>
+      <div class="stage"><div class="when">Years later</div><h3>Damage</h3><p>Without treatment it can harm the brain, heart, nerves and bones. Damage that’s done can’t be undone.</p></div>
+    </div>
+    <div class="alert"><strong>See a doctor today</strong> if you have sudden changes in your vision, hearing loss, ringing in your ears, a bad headache, or confusion. Syphilis can reach the eyes, ears and brain at <em>any</em> stage. Tell them you want a syphilis test.</div>
+  </div>
+</section>
+
+<section id="check">
+  <div class="wrap">
+    <div class="eyebrow">30-second self-check</div>
+    <h2>Should I get tested?</h2>
+    <p>Tap yes or no. Your answers stay on this screen. Nothing is saved or sent anywhere.</p>
+    <div class="check" id="quiz">
+      <div class="q"><span>Have you had sex with a new partner, or more than one partner, in the last 12 months?</span><div class="yn" data-q="new"><button type="button" aria-pressed="false" data-v="1">Yes</button><button type="button" aria-pressed="false" data-v="0">No</button></div></div>
+      <div class="q"><span>Have you noticed a sore, bump or rash lately, even one that went away?</span><div class="yn" data-q="sign"><button type="button" aria-pressed="false" data-v="1">Yes</button><button type="button" aria-pressed="false" data-v="0">No</button></div></div>
+      <div class="q"><span>Has a partner told you they have syphilis or another STI?</span><div class="yn" data-q="told"><button type="button" aria-pressed="false" data-v="1">Yes</button><button type="button" aria-pressed="false" data-v="0">No</button></div></div>
+      <div class="q"><span>Is your partner pregnant, or are you trying to have a baby?</span><div class="yn" data-q="preg"><button type="button" aria-pressed="false" data-v="1">Yes</button><button type="button" aria-pressed="false" data-v="0">No</button></div></div>
+      <div class="q"><span>Have you had a syphilis test in the last 12 months?</span><div class="yn" data-q="tested"><button type="button" aria-pressed="false" data-v="1">Yes</button><button type="button" aria-pressed="false" data-v="0">No</button></div></div>
+      <div class="result" id="result" role="status" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section id="test">
+  <div class="wrap">
+    <div class="eyebrow">Testing</div>
+    <h2>Quick. Private. No big deal.</h2>
+    <div class="grid3">
+      <div class="card">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F0924D" stroke-width="2.2" stroke-linecap="round"><path d="M12 2v6M9 5h6M7 10h10l-1 11H8z"/></svg></div>
+        <h3>A blood test</h3>
+        <p>A quick blood draw or a finger prick. Some clinics have a <strong>rapid test with results in about 15 minutes</strong>. Ask for an HIV test at the same time.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F0924D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 21v-6h6v6"/></svg></div>
+        <h3>Or test at home</h3>
+        <p>An FDA-authorized finger-prick home test gives a result in 15 minutes. If it’s positive, you still need a clinic visit to confirm and get treated. If you’ve had syphilis before, skip the home test and go to a clinic.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F0924D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
+        <h3>It’s confidential</h3>
+        <p>Your results are private health information. Medicaid and most insurance cover testing, and public clinics offer low-cost or free tests.</p>
+      </div>
+    </div>
+    <div class="alert"><strong>Timing matters.</strong> A blood test can miss a very new infection in the first few weeks. If you think you were exposed recently, test now and again in about 6 weeks. If a partner was just diagnosed, ask about getting treated today, even if your test is negative.</div>
+  </div>
+</section>
+
+<section id="treat">
+  <div class="wrap">
+    <div class="eyebrow">Treatment</div>
+    <div class="grid2" style="margin-top:0;align-items:center">
+      <div>
+        <p class="big">Catch it early.<br><em>One shot. Done.</em></p>
+        <p>Syphilis is cured with a penicillin shot. If it’s caught in the first year, <strong>one shot is usually all it takes</strong>. If it’s been longer, or nobody knows how long, it’s one shot a week for three weeks. Finish all three.</p>
+      </div>
+      <div class="card">
+        <h3>After your shot</h3>
+        <ul>
+          <li><strong>No sex for 7 days</strong> after treatment, and until any sores have fully healed.</li>
+          <li>Make sure your <strong>partners get tested and treated</strong>, or you can catch it right back.</li>
+          <li>Get a follow-up blood test at <strong>6 and 12 months</strong> to make sure it worked.</li>
+          <li>Being cured doesn’t make you immune. <strong>You can get it again.</strong></li>
+          <li>Allergic to penicillin? Tell the clinic. There are other options for most men.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="circle">
+  <div class="wrap">
+    <div class="eyebrow">Protect your circle</div>
+    <h2>Testing is how you look out for your people.</h2>
+    <div class="grid2">
+      <div class="card">
+        <h3>Your partner</h3>
+        <p>If you test positive, anyone you’ve had sex with in the last few months needs a test and treatment too. Don’t want to have that talk? <strong>The health department can let them know anonymously.</strong> They won’t say your name.</p>
+      </div>
+      <div class="card">
+        <h3>Your baby</h3>
+        <p>A pregnant woman with syphilis can pass it to her baby. That can cause <strong>stillbirth, infant death or lifelong health problems</strong>. If your partner is pregnant, you both should get tested. Treating you protects her from getting it again.</p>
+      </div>
+      <div class="card">
+        <h3>Your health</h3>
+        <p>Syphilis sores make it easier to get or pass on HIV. Get tested for both. If you’re at risk for HIV, ask about PrEP, a daily pill or shot that prevents it.</p>
+      </div>
+      <div class="card">
+        <h3>Lower your risk</h3>
+        <p>Use condoms every time, for oral, vaginal and anal sex. They help a lot, but only protect the skin they cover. Fewer partners and regular testing do the rest.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="where" id="where">
+  <div class="wrap">
+    <div class="eyebrow">Get tested</div>
+    <h2>Where to go in Columbus</h2>
+    <div class="grid2">
+      <div class="card">
+        <h3>Columbus Public Health<br>Sexual Health and Wellness Center</h3>
+        <p>240 Parsons Ave., Columbus, OH 43215<br>Testing and treatment for syphilis, HIV and other STIs. Ask about low-cost or free services.</p>
+        <div class="cta" style="margin-top:16px">
+          <a class="btn primary" href="tel:+16146457772">Call (614) 645-7772</a>
+          <a class="btn ghost" href="https://maps.google.com/?q=240+Parsons+Ave+Columbus+OH+43215" target="_blank" rel="noopener">Directions</a>
+        </div>
+        <p style="margin-top:14px;font-size:.85rem">Call ahead to check walk-in hours.</p>
+      </div>
+      <div class="card">
+        <h3>Other options</h3>
+        <ul>
+          <li><a href="https://gettested.cdc.gov/" target="_blank" rel="noopener">Find a testing site near you</a> (CDC locator, search by ZIP code)</li>
+          <li>Your own doctor or a community health center: just ask for “a syphilis test”</li>
+          <li>An urgent care or ER if you have vision, hearing or nerve symptoms</li>
+          <li>An over-the-counter home test from a pharmacy or online</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="myths">
+  <div class="wrap">
+    <div class="eyebrow">Real talk</div>
+    <h2>Myths vs. facts</h2>
+    <details><summary><span class="tag m">MYTH</span>Only gay guys get syphilis.</summary><p><span class="tag f">FACT</span>About 1 in 3 cases in Central Ohio are now in men who have sex with women. Syphilis doesn’t check who you sleep with.</p></details>
+    <details><summary><span class="tag m">MYTH</span>The sore went away, so I’m fine.</summary><p><span class="tag f">FACT</span>The sore heals on its own, but the infection stays. It moves to the next stage and can still be passed on.</p></details>
+    <details><summary><span class="tag m">MYTH</span>I’d know if I had it.</summary><p><span class="tag f">FACT</span>Many men never notice a sign. The sore is often painless and can be hidden inside the mouth or anus. A test is the only way to know.</p></details>
+    <details><summary><span class="tag m">MYTH</span>Oral sex is safe.</summary><p><span class="tag f">FACT</span>Syphilis spreads through contact with a sore during oral, vaginal or anal sex. Oral counts.</p></details>
+    <details><summary><span class="tag m">MYTH</span>I had it once, so I can’t get it again.</summary><p><span class="tag f">FACT</span>Being cured doesn’t protect you. You can get syphilis again, which is why partners need treatment too.</p></details>
+    <details><summary><span class="tag m">MYTH</span>Treatment means weeks of shots.</summary><p><span class="tag f">FACT</span>Caught early, it’s usually one shot. That’s the whole point of testing now.</p></details>
+    <details><summary><span class="tag m">MYTH</span>You can get it from a toilet seat.</summary><p><span class="tag f">FACT</span>No. Not from toilet seats, doorknobs, pools, hot tubs, shared clothes or forks.</p></details>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>SYPHT</strong> is a student concept developed for the Ohio State University College of Public Health Fall 2026 Case Competition, prepared for Columbus Public Health. It is not an official Columbus Public Health website. Information is based on CDC guidance and is for education only; it isn’t a substitute for medical care. Check clinic details before you go.</p>
+  </div>
+</footer>
+
+<button class="fab" type="button" data-open-chat aria-label="Open the SYPHT question helper">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
+  Ask SYPHT
+</button>
+
+<div class="chat" id="chat" role="dialog" aria-modal="false" aria-labelledby="chat-title">
+  <header>
+    <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#F0924D"/><path d="M16 42l11-17 9 11 12-16" stroke="#13222B" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div><b id="chat-title">Ask SYPHT</b><small>Private. No names. Nothing saved.</small></div>
+    <button type="button" id="chat-close" aria-label="Close chat">×</button>
+  </header>
+  <div class="log" id="log" aria-live="polite"></div>
+  <div class="chips" id="chips"></div>
+  <form id="chat-form" autocomplete="off">
+    <label for="chat-input" class="sr" style="position:absolute;left:-9999px">Your question</label>
+    <input id="chat-input" type="text" placeholder="Type a question…" maxlength="300">
+    <button type="submit">Send</button>
+  </form>
+  <div class="privacy">Answers come from a built-in guide on your phone. What you type isn’t sent anywhere.</div>
+</div>
+
+<script>
+(function(){
+  /* ---------- self-check ---------- */
+  var answers = {};
+  var result = document.getElementById('result');
+  document.querySelectorAll('.yn').forEach(function(group){
+    group.addEventListener('click', function(e){
+      var b = e.target.closest('button'); if(!b) return;
+      group.querySelectorAll('button').forEach(function(x){ x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+      answers[group.dataset.q] = b.dataset.v === '1';
+      renderResult();
+    });
+  });
+  function renderResult(){
+    var n = Object.keys(answers).length;
+    if(n < 5){ result.className = 'result show'; result.innerHTML = '<p style="margin:0;color:var(--muted)">' + (5 - n) + ' more to go…</p>'; return; }
+    var a = answers, title, body;
+    if(a.told || a.sign){
+      title = 'Get tested this week.';
+      body = 'A sore, rash or a partner’s diagnosis is a real reason to check. Tell the clinic what you noticed. If a partner was diagnosed, you may be treated the same day, even before your result comes back.';
+    } else if(a.preg){
+      title = 'Test now. Protect your baby.';
+      body = 'If your partner is pregnant or you’re trying, you both should be tested. Treating you keeps her from getting it again.';
+    } else if(a.new && !a.tested){
+      title = 'Good time to get tested.';
+      body = 'New or multiple partners and no test in the last year? A quick blood test settles it. Caught early, it’s one shot.';
+    } else if(a.new){
+      title = 'You’re on it. Keep it up.';
+      body = 'With new or multiple partners, testing every 3 to 6 months is smart. Use condoms in between.';
+    } else if(!a.tested){
+      title = 'Your risk looks low.';
+      body = 'There’s no harm in a test if you’ve never had one. Test again any time you have a new partner or notice a change.';
+    } else {
+      title = 'Looks good.';
+      body = 'Keep testing once a year, or any time something changes.';
+    }
+    result.className = 'result show';
+    result.innerHTML = '<h3>' + title + '</h3><p>' + body + '</p><a class="btn dark" href="#where">Where to get tested</a>';
+  }
+
+  /* ---------- chatbot (offline, rule-based) ---------- */
+  var CLINIC = 'Columbus Public Health Sexual Health and Wellness Center, 240 Parsons Ave. Call <a href="tel:+16146457772">(614) 645-7772</a> to check walk-in hours.';
+  var KB = [
+    {k:['what is syphilis','what is it','what\'s syphilis','whats syphilis','tell me about','bacteria','std','sti'], a:'Syphilis is a sexually transmitted infection caused by bacteria. It spreads through contact with a sore during oral, vaginal or anal sex. It’s easy to cure with penicillin, especially if you catch it early.'},
+    {k:['sign','symptom','look like','how do i know','notice'], a:'Signs come in stages:\n1. A sore, usually painless, about 3 weeks after sex. It heals by itself.\n2. Weeks later, a rash that doesn’t itch, often on palms or soles, maybe with fever or swollen glands.\n3. Then no signs at all, sometimes for years.\nMany men never notice anything. A test is the only way to know.'},
+    {k:['sore','bump','ulcer','chancre','spot on','lump','blister'], a:'A syphilis sore is usually firm, round and painless. It can be on the penis, anus, lips or in the mouth, and heals in 3 to 6 weeks even without treatment. Healing doesn’t mean it’s gone. If you’ve had any sore, get a blood test.'},
+    {k:['rash','palm','sole','hair loss'], a:'A rash that doesn’t itch, especially on the palms of your hands or soles of your feet, is a classic sign of the second stage. It can come with fever, sore throat, swollen glands or patchy hair loss. Get tested, even if it fades.'},
+    {k:['went away','go away','healed','on its own','disappear','cure itself'], a:'The sore and rash go away on their own, but the infection doesn’t. It goes quiet and can damage your brain, heart and nerves years later. Only treatment cures it.'},
+    {w:3,k:['eye','vision','blind','hearing','ears','ringing','headache','confus','brain','neuro'], a:'Syphilis can affect the eyes, ears and brain at any stage. Sudden vision changes, hearing loss, ringing in the ears, a bad headache or confusion need a doctor <strong>today</strong>. Go to urgent care or an ER and say you want a syphilis test.'},
+    {k:['how do you get','how is it spread','spread','catch','transmit','get it','pass it'], a:'Syphilis spreads through direct contact with a sore during oral, vaginal or anal sex. It can also pass from a pregnant woman to her baby. You can’t get it from toilet seats, doorknobs, pools or sharing clothes or forks.'},
+    {k:['oral','blowjob','blow job','going down','giving head'], a:'Yes, you can get syphilis from oral sex, giving or receiving, if there’s a sore. Condoms or dental dams lower the risk.'},
+    {k:['kiss'], a:'Kissing can spread syphilis only if there’s a sore on the lips or inside the mouth. It’s much less common than spread through sex.'},
+    {w:3,k:['toilet','seat','towel','fork','cup','pool','hot tub','clothes'], a:'No. You can’t get syphilis from toilet seats, towels, pools, hot tubs, clothes, cups or forks. It needs direct contact with a sore.'},
+    {k:['condom','protect','prevent','lower risk','safe sex'], a:'Condoms for oral, vaginal and anal sex lower your risk a lot. They only protect the skin they cover, so a sore outside that area can still spread it. Fewer partners and regular testing help too.'},
+    {w:3,k:['straight','gay','only gay','not gay','men who have sex with men','msm','women'], a:'Syphilis doesn’t check who you sleep with. In Central Ohio, about 1 in 3 cases are now in men who have sex with women, and that share is growing.'},
+    {k:['should i test','do i need','need a test','get tested','tested','test','check'], a:'Get tested if you’ve had a new or more than one partner, noticed a sore or rash, a partner told you they have an STI, or your partner is pregnant. Sexually active and never tested? That’s a good reason too. Try the 30-second self-check on this page.'},
+    {k:['how often','every','once a year','regular'], a:'At least once a year if you’re sexually active with new partners. Every 3 to 6 months if you have multiple partners. And any time you notice a sore or rash, or a partner is diagnosed.'},
+    {k:['how is the test','what kind of test','blood','finger','prick','swab','needle'], a:'It’s a blood test: a small blood draw or a finger prick. Some clinics have rapid tests with results in about 15 minutes. If you have a sore, they may swab it too.'},
+    {k:['how long','results','wait','15 minutes','quick'], a:'Rapid finger-prick tests take about 15 minutes. Lab blood tests usually take a few days. A positive rapid test is confirmed with a lab test.'},
+    {k:['home test','at home','home kit','self test','self-test','mail','pharmacy','order'], a:'There’s an FDA-authorized finger-prick home test with results in 15 minutes, sold over the counter. If it’s positive, go to a clinic to confirm and get treated. If you’ve had syphilis before, the home test will likely read positive anyway, so go to a clinic instead.'},
+    {k:['window','too soon','recent','last week','exposed','just had sex','yesterday','last night'], a:'A blood test can miss a very new infection in the first few weeks. If you were exposed recently, test now and again in about 6 weeks. If a partner was diagnosed, ask about treatment right away, even if your test is negative.'},
+    {k:['cost','price','free','pay','money','afford','cheap','insurance','medicaid','no insurance'], a:'Medicaid and most insurance cover syphilis testing and treatment. Public clinics offer low-cost or free testing. ' + CLINIC},
+    {k:['where','clinic','location','near me','address','hours','open','walk in','walk-in','appointment','phone','number','call'], a:CLINIC + '\nYou can also <a href="https://gettested.cdc.gov/" target="_blank" rel="noopener">find a test near you by ZIP code</a>, or ask your own doctor for “a syphilis test.”'},
+    {k:['private','confidential','anonymous','who will know','tell anyone','record','court','police','boss','employer','family find out'], a:'Your test results are private health information. Clinics don’t share them with your employer or family. If you test positive, the health department may reach out to help get partners treated, and they never tell partners your name.'},
+    {k:['treat','cure','medicine','shot','injection','penicillin','antibiotic'], a:'Syphilis is cured with penicillin shots. Caught in the first year, one shot is usually enough. If it’s been longer, or nobody knows how long, it’s one shot a week for three weeks. Finish all three.'},
+    {k:['one shot','three shot','3 shot','how many','three','3 doses'], a:'Early syphilis (under a year): usually one shot. Later or unknown: three shots, one week apart. That’s why testing early pays off.'},
+    {k:['allerg'], a:'Tell the clinic if you’re allergic to penicillin. For most men there’s another option, usually doxycycline pills taken twice a day for 2 to 4 weeks. Pregnant women need penicillin, so doctors can help them safely past the allergy.'},
+    {k:['shortage'], a:'There has been a shortage of the penicillin shot since 2023. Clinics are saving it for those who need it most, and catching syphilis early means fewer doses. For men, doctors can use doxycycline pills as a backup.'},
+    {k:['after treatment','after the shot','when can i have sex','sex again','wait to have sex','how long until'], a:'No sex for 7 days after your shot, and until any sores have fully healed. Make sure partners are treated too, so you don’t catch it right back. Get follow-up blood tests at 6 and 12 months.'},
+    {k:['again','reinfect','immune','twice','second time','had it before'], a:'Yes, you can get syphilis again. Being cured doesn’t make you immune. That’s why partners need treatment and why follow-up tests matter.'},
+    {k:['partner','girlfriend','wife','tell her','tell them','notify','hookup','my ex'], a:'Anyone you’ve had sex with in the last few months should get tested and treated. If you don’t want to tell them yourself, the health department can notify them anonymously, without using your name.'},
+    {w:3,k:['pregnan','baby','newborn','congenital','stillbirth','trying to have','expecting'], a:'Syphilis can pass from a pregnant woman to her baby and cause stillbirth, infant death or lifelong health problems. If your partner is pregnant, you both should get tested. Treating you keeps her from being reinfected. She should ask her prenatal provider about testing more than once during pregnancy.'},
+    {k:['hiv','prep','aids'], a:'Syphilis sores make it easier to get or pass on HIV. Ask for an HIV test with your syphilis test. If you’re at risk, ask about PrEP, a pill or shot that prevents HIV.'},
+    {k:['doxy','doxypep','doxy-pep','morning after'], a:'Doxy-PEP is an antibiotic taken after sex to lower STI risk. Right now the CDC recommends it for gay and bisexual men and transgender women who had an STI in the past year. The evidence isn’t there yet for straight men. Talk to a provider about what fits you.'},
+    {k:['scared','embarrass','shame','nervous','afraid','worried','judge'], a:'That’s normal. Clinic staff test for this every day and aren’t there to judge. Getting tested is looking out for yourself and the people you care about. Caught early, it’s one shot and done.'},
+    {k:['talk to someone','person','human','nurse','doctor','real person'], a:'For a real person, call ' + CLINIC}
+  ];
+  var CHIPS = ['What are the signs?','Should I get tested?','Is it free?','Can I test at home?','How is it treated?','How do I tell my partner?','My partner is pregnant','Where do I go?'];
+  var GREET = /^(hi|hey|hello|yo|sup|what's up|whats up|good (morning|afternoon|evening))\b/;
+  var THANKS = /\b(thanks|thank you|thx|appreciate|cool|ok|okay|got it)\b/;
+
+  var log = document.getElementById('log'), chat = document.getElementById('chat'), fab = document.querySelector('.fab');
+  var input = document.getElementById('chat-input'), started = false;
+
+  function add(text, who){
+    var d = document.createElement('div');
+    d.className = 'msg ' + who;
+    if(who === 'bot') d.innerHTML = text; else d.textContent = text;
+    log.appendChild(d); log.scrollTop = log.scrollHeight;
+  }
+  function answer(q){
+    var t = ' ' + q.toLowerCase().replace(/[’']/g,'\'').replace(/[^a-z0-9' -]/g,' ').replace(/\s+/g,' ') + ' ';
+    if(GREET.test(t.trim()) && t.trim().split(' ').length <= 3) return 'Hey. Ask me anything about syphilis: signs, testing, treatment, partners. No names, nothing saved.';
+    var best = null, bestScore = 0;
+    KB.forEach(function(item){
+      var s = 0;
+      item.k.forEach(function(k){ if(t.indexOf(' ' + k) !== -1) s += k.split(' ').length + (k.length > 6 ? 1 : 0); });
+      if(s) s += item.w || 0;
+      if(s > bestScore){ bestScore = s; best = item; }
+    });
+    if(best) return best.a;
+    if(THANKS.test(t)) return 'Anytime. Remember: catch it early, one shot, done.';
+    if(t.indexOf('syphilis') !== -1) return KB[0].a;
+    return 'I’m not sure I got that. I can help with signs, testing, treatment, partners and pregnancy. For anything else, call ' + CLINIC;
+  }
+  function send(q){
+    q = (q || '').trim(); if(!q) return;
+    add(q, 'me');
+    setTimeout(function(){ add(answer(q), 'bot'); }, 350);
+  }
+  function openChat(){
+    chat.classList.add('open'); fab.hidden = true;
+    if(!started){
+      started = true;
+      add('Hey, I’m the SYPHT helper. Ask me anything about syphilis. I don’t need your name and nothing you type is saved.\n\nI’m a guide, not a doctor. For medical advice, talk to a clinic.', 'bot');
+      var chips = document.getElementById('chips');
+      CHIPS.forEach(function(c){ var b = document.createElement('button'); b.type = 'button'; b.textContent = c; b.onclick = function(){ send(c); }; chips.appendChild(b); });
+    }
+    setTimeout(function(){ input.focus(); }, 50);
+  }
+  function closeChat(){ chat.classList.remove('open'); fab.hidden = false; fab.focus(); }
+  document.querySelectorAll('[data-open-chat]').forEach(function(b){ b.addEventListener('click', openChat); });
+  document.getElementById('chat-close').addEventListener('click', closeChat);
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && chat.classList.contains('open')) closeChat(); });
+  document.getElementById('chat-form').addEventListener('submit', function(e){ e.preventDefault(); send(input.value); input.value = ''; });
+})();
+</script>
+</body>
+</html>
